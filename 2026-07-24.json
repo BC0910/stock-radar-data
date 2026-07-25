@@ -1,0 +1,778 @@
+{
+  "date": "2026-07-24",
+  "generated_at": "2026-07-25T22:50:01.751052+08:00",
+  "indicators": {
+    "tpex_weekly_macd": {
+      "status": "ok",
+      "state": "持續下降",
+      "weeks_in_state": 7,
+      "unconfirmed_signal": false,
+      "confirmed_weeks_available": 52
+    },
+    "taiex_monthly_ma": {
+      "status": "ok",
+      "direction": "下彎"
+    },
+    "tpex_monthly_ma": {
+      "status": "ok",
+      "direction": "下彎"
+    }
+  },
+  "market": {
+    "taiex": {
+      "close": 43654.84,
+      "change_pct": -2.67,
+      "trade_value": 761738017748.0
+    },
+    "tpex_index": {
+      "close": 377.63,
+      "change_pct": -3.6928412945346967
+    }
+  },
+  "top50_stocks": [
+    {
+      "code": "2330",
+      "name": "台積電",
+      "trade_value": 58407263735.0,
+      "market_rank": 1,
+      "rank_change": 0,
+      "group": "晶圓代工",
+      "is_new_entrant_top50": false,
+      "is_first_ever_top50": false,
+      "is_jump_into_top30": false
+    },
+    {
+      "code": "2454",
+      "name": "聯發科",
+      "trade_value": 34556793720.0,
+      "market_rank": 2,
+      "rank_change": 3,
+      "group": "IC/IP設計",
+      "is_new_entrant_top50": false,
+      "is_first_ever_top50": false,
+      "is_jump_into_top30": false
+    },
+    {
+      "code": "2408",
+      "name": "南亞科",
+      "trade_value": 33255807312.0,
+      "market_rank": 3,
+      "rank_change": 0,
+      "group": "記憶體",
+      "is_new_entrant_top50": false,
+      "is_first_ever_top50": false,
+      "is_jump_into_top30": false
+    },
+    {
+      "code": "3231",
+      "name": "緯創",
+      "trade_value": 32336958893.0,
+      "market_rank": 4,
+      "rank_change": 0,
+      "group": "伺服器ODM",
+      "is_new_entrant_top50": false,
+      "is_first_ever_top50": false,
+      "is_jump_into_top30": false
+    },
+    {
+      "code": "2327",
+      "name": "國巨*",
+      "trade_value": 27550275085.0,
+      "market_rank": 5,
+      "rank_change": -3,
+      "group": "被動元件",
+      "is_new_entrant_top50": false,
+      "is_first_ever_top50": false,
+      "is_jump_into_top30": false
+    },
+    {
+      "code": "2344",
+      "name": "華邦電",
+      "trade_value": 21437572271.0,
+      "market_rank": 6,
+      "rank_change": 0,
+      "group": "記憶體",
+      "is_new_entrant_top50": false,
+      "is_first_ever_top50": false,
+      "is_jump_into_top30": false
+    },
+    {
+      "code": "2303",
+      "name": "聯電",
+      "trade_value": 20106908508.0,
+      "market_rank": 7,
+      "rank_change": 7,
+      "group": "晶圓代工",
+      "is_new_entrant_top50": false,
+      "is_first_ever_top50": false,
+      "is_jump_into_top30": false
+    },
+    {
+      "code": "3081",
+      "name": "聯亞",
+      "trade_value": 18673795000.0,
+      "market_rank": 8,
+      "rank_change": 50,
+      "group": "光通訊原料",
+      "is_new_entrant_top50": true,
+      "is_first_ever_top50": true,
+      "is_jump_into_top30": true
+    },
+    {
+      "code": "6669",
+      "name": "緯穎",
+      "trade_value": 17270977515.0,
+      "market_rank": 9,
+      "rank_change": 7,
+      "group": "伺服器ODM",
+      "is_new_entrant_top50": false,
+      "is_first_ever_top50": false,
+      "is_jump_into_top30": false
+    },
+    {
+      "code": "3037",
+      "name": "欣興",
+      "trade_value": 16955119117.0,
+      "market_rank": 10,
+      "rank_change": -1,
+      "group": "ABF載板",
+      "is_new_entrant_top50": false,
+      "is_first_ever_top50": false,
+      "is_jump_into_top30": false
+    },
+    {
+      "code": "4958",
+      "name": "臻鼎-KY",
+      "trade_value": 16347350717.0,
+      "market_rank": 11,
+      "rank_change": -4,
+      "group": "ABF載板",
+      "is_new_entrant_top50": false,
+      "is_first_ever_top50": false,
+      "is_jump_into_top30": false
+    },
+    {
+      "code": "8039",
+      "name": "台虹",
+      "trade_value": 13860494331.0,
+      "market_rank": 12,
+      "rank_change": 9,
+      "group": "PCB",
+      "is_new_entrant_top50": false,
+      "is_first_ever_top50": false,
+      "is_jump_into_top30": false
+    },
+    {
+      "code": "1303",
+      "name": "南亞",
+      "trade_value": 13653234628.0,
+      "market_rank": 13,
+      "rank_change": -5,
+      "group": null,
+      "is_new_entrant_top50": false,
+      "is_first_ever_top50": false,
+      "is_jump_into_top30": false
+    },
+    {
+      "code": "8046",
+      "name": "南電",
+      "trade_value": 12828762965.0,
+      "market_rank": 14,
+      "rank_change": -4,
+      "group": "ABF載板",
+      "is_new_entrant_top50": false,
+      "is_first_ever_top50": false,
+      "is_jump_into_top30": false
+    },
+    {
+      "code": "2308",
+      "name": "台達電",
+      "trade_value": 12821156407.0,
+      "market_rank": 15,
+      "rank_change": 7,
+      "group": "電源管理",
+      "is_new_entrant_top50": false,
+      "is_first_ever_top50": false,
+      "is_jump_into_top30": false
+    },
+    {
+      "code": "6488",
+      "name": "環球晶",
+      "trade_value": 12431255000.0,
+      "market_rank": 16,
+      "rank_change": 9,
+      "group": "矽晶圓材料",
+      "is_new_entrant_top50": false,
+      "is_first_ever_top50": false,
+      "is_jump_into_top30": false
+    },
+    {
+      "code": "6505",
+      "name": "台塑化",
+      "trade_value": 11005165098.0,
+      "market_rank": 17,
+      "rank_change": 12,
+      "group": null,
+      "is_new_entrant_top50": false,
+      "is_first_ever_top50": false,
+      "is_jump_into_top30": false
+    },
+    {
+      "code": "3017",
+      "name": "奇鋐",
+      "trade_value": 10956024585.0,
+      "market_rank": 18,
+      "rank_change": -7,
+      "group": "散熱原件",
+      "is_new_entrant_top50": false,
+      "is_first_ever_top50": false,
+      "is_jump_into_top30": false
+    },
+    {
+      "code": "3711",
+      "name": "日月光投控",
+      "trade_value": 10898426618.0,
+      "market_rank": 19,
+      "rank_change": 8,
+      "group": "封測",
+      "is_new_entrant_top50": false,
+      "is_first_ever_top50": false,
+      "is_jump_into_top30": false
+    },
+    {
+      "code": "3450",
+      "name": "聯鈞",
+      "trade_value": 10869318609.0,
+      "market_rank": 20,
+      "rank_change": 12,
+      "group": "CPO光模組",
+      "is_new_entrant_top50": false,
+      "is_first_ever_top50": false,
+      "is_jump_into_top30": true
+    },
+    {
+      "code": "4979",
+      "name": "華星光",
+      "trade_value": 10866063500.0,
+      "market_rank": 21,
+      "rank_change": 28,
+      "group": "CPO光模組",
+      "is_new_entrant_top50": false,
+      "is_first_ever_top50": false,
+      "is_jump_into_top30": true
+    },
+    {
+      "code": "0050",
+      "name": "元大台灣50",
+      "trade_value": 10708319061.0,
+      "market_rank": 22,
+      "rank_change": 25,
+      "group": null,
+      "is_new_entrant_top50": false,
+      "is_first_ever_top50": false,
+      "is_jump_into_top30": true
+    },
+    {
+      "code": "3189",
+      "name": "景碩",
+      "trade_value": 10362094070.0,
+      "market_rank": 23,
+      "rank_change": -5,
+      "group": "ABF載板",
+      "is_new_entrant_top50": false,
+      "is_first_ever_top50": false,
+      "is_jump_into_top30": false
+    },
+    {
+      "code": "3481",
+      "name": "群創",
+      "trade_value": 10233219701.0,
+      "market_rank": 24,
+      "rank_change": -5,
+      "group": "面板",
+      "is_new_entrant_top50": false,
+      "is_first_ever_top50": false,
+      "is_jump_into_top30": false
+    },
+    {
+      "code": "6139",
+      "name": "亞翔",
+      "trade_value": 9704446762.0,
+      "market_rank": 25,
+      "rank_change": 67,
+      "group": "半導體設備廠務",
+      "is_new_entrant_top50": true,
+      "is_first_ever_top50": true,
+      "is_jump_into_top30": true
+    },
+    {
+      "code": "2383",
+      "name": "台光電",
+      "trade_value": 9595247940.0,
+      "market_rank": 26,
+      "rank_change": 13,
+      "group": "CCL",
+      "is_new_entrant_top50": false,
+      "is_first_ever_top50": false,
+      "is_jump_into_top30": true
+    },
+    {
+      "code": "6770",
+      "name": "力積電",
+      "trade_value": 9560587986.0,
+      "market_rank": 27,
+      "rank_change": 11,
+      "group": "晶圓代工",
+      "is_new_entrant_top50": false,
+      "is_first_ever_top50": false,
+      "is_jump_into_top30": true
+    },
+    {
+      "code": "8299",
+      "name": "群聯",
+      "trade_value": 8938965000.0,
+      "market_rank": 28,
+      "rank_change": 20,
+      "group": "記憶體",
+      "is_new_entrant_top50": false,
+      "is_first_ever_top50": false,
+      "is_jump_into_top30": true
+    },
+    {
+      "code": "2317",
+      "name": "鴻海",
+      "trade_value": 8518599943.0,
+      "market_rank": 29,
+      "rank_change": -16,
+      "group": "伺服器ODM",
+      "is_new_entrant_top50": false,
+      "is_first_ever_top50": false,
+      "is_jump_into_top30": false
+    },
+    {
+      "code": "00631L",
+      "name": "元大台灣50正2",
+      "trade_value": 8456833323.0,
+      "market_rank": 30,
+      "rank_change": 21,
+      "group": null,
+      "is_new_entrant_top50": true,
+      "is_first_ever_top50": false,
+      "is_jump_into_top30": true
+    },
+    {
+      "code": "3374",
+      "name": "精材",
+      "trade_value": 8174783000.0,
+      "market_rank": 31,
+      "rank_change": -7,
+      "group": "封測",
+      "is_new_entrant_top50": false,
+      "is_first_ever_top50": false,
+      "is_jump_into_top30": false
+    },
+    {
+      "code": "3443",
+      "name": "創意",
+      "trade_value": 8144366725.0,
+      "market_rank": 32,
+      "rank_change": 14,
+      "group": "IC/IP設計",
+      "is_new_entrant_top50": false,
+      "is_first_ever_top50": false,
+      "is_jump_into_top30": false
+    },
+    {
+      "code": "3665",
+      "name": "貿聯-KY",
+      "trade_value": 7486959665.0,
+      "market_rank": 33,
+      "rank_change": -18,
+      "group": "連接器精密零組件",
+      "is_new_entrant_top50": false,
+      "is_first_ever_top50": false,
+      "is_jump_into_top30": false
+    },
+    {
+      "code": "6274",
+      "name": "台燿",
+      "trade_value": 7313895000.0,
+      "market_rank": 34,
+      "rank_change": -17,
+      "group": "CCL",
+      "is_new_entrant_top50": false,
+      "is_first_ever_top50": false,
+      "is_jump_into_top30": false
+    },
+    {
+      "code": "3105",
+      "name": "穩懋",
+      "trade_value": 7256147000.0,
+      "market_rank": 35,
+      "rank_change": -1,
+      "group": "光通訊原料",
+      "is_new_entrant_top50": false,
+      "is_first_ever_top50": false,
+      "is_jump_into_top30": false
+    },
+    {
+      "code": "3163",
+      "name": "波若威",
+      "trade_value": 7229407000.0,
+      "market_rank": 36,
+      "rank_change": 28,
+      "group": "光通訊原料",
+      "is_new_entrant_top50": true,
+      "is_first_ever_top50": true,
+      "is_jump_into_top30": false
+    },
+    {
+      "code": "3653",
+      "name": "健策",
+      "trade_value": 6741549994.0,
+      "market_rank": 37,
+      "rank_change": -4,
+      "group": "散熱原件",
+      "is_new_entrant_top50": false,
+      "is_first_ever_top50": false,
+      "is_jump_into_top30": false
+    },
+    {
+      "code": "3008",
+      "name": "大立光",
+      "trade_value": 6307620645.0,
+      "market_rank": 38,
+      "rank_change": 4,
+      "group": "CPO光模組",
+      "is_new_entrant_top50": false,
+      "is_first_ever_top50": false,
+      "is_jump_into_top30": false
+    },
+    {
+      "code": "2634",
+      "name": "漢翔",
+      "trade_value": 6117129757.0,
+      "market_rank": 39,
+      "rank_change": 18,
+      "group": null,
+      "is_new_entrant_top50": true,
+      "is_first_ever_top50": false,
+      "is_jump_into_top30": false
+    },
+    {
+      "code": "3661",
+      "name": "世芯-KY",
+      "trade_value": 5946035840.0,
+      "market_rank": 40,
+      "rank_change": 16,
+      "group": "IC/IP設計",
+      "is_new_entrant_top50": true,
+      "is_first_ever_top50": false,
+      "is_jump_into_top30": false
+    },
+    {
+      "code": "6213",
+      "name": "聯茂",
+      "trade_value": 5746181601.0,
+      "market_rank": 41,
+      "rank_change": -15,
+      "group": "CCL",
+      "is_new_entrant_top50": false,
+      "is_first_ever_top50": false,
+      "is_jump_into_top30": false
+    },
+    {
+      "code": "1326",
+      "name": "台化",
+      "trade_value": 5537342144.0,
+      "market_rank": 42,
+      "rank_change": -22,
+      "group": null,
+      "is_new_entrant_top50": false,
+      "is_first_ever_top50": false,
+      "is_jump_into_top30": false
+    },
+    {
+      "code": "2455",
+      "name": "全新",
+      "trade_value": 5485731600.0,
+      "market_rank": 43,
+      "rank_change": -2,
+      "group": "光通訊原料",
+      "is_new_entrant_top50": false,
+      "is_first_ever_top50": false,
+      "is_jump_into_top30": false
+    },
+    {
+      "code": "4991",
+      "name": "環宇-KY",
+      "trade_value": 5364541000.0,
+      "market_rank": 44,
+      "rank_change": -1,
+      "group": "光通訊原料",
+      "is_new_entrant_top50": false,
+      "is_first_ever_top50": false,
+      "is_jump_into_top30": false
+    },
+    {
+      "code": "6442",
+      "name": "光聖",
+      "trade_value": 5112690590.0,
+      "market_rank": 45,
+      "rank_change": 0,
+      "group": "CPO光模組",
+      "is_new_entrant_top50": false,
+      "is_first_ever_top50": false,
+      "is_jump_into_top30": false
+    },
+    {
+      "code": "2337",
+      "name": "旺宏",
+      "trade_value": 4995899408.0,
+      "market_rank": 46,
+      "rank_change": -16,
+      "group": "記憶體",
+      "is_new_entrant_top50": false,
+      "is_first_ever_top50": false,
+      "is_jump_into_top30": false
+    },
+    {
+      "code": "2451",
+      "name": "創見",
+      "trade_value": 4942365028.0,
+      "market_rank": 47,
+      "rank_change": 137,
+      "group": null,
+      "is_new_entrant_top50": true,
+      "is_first_ever_top50": true,
+      "is_jump_into_top30": false
+    },
+    {
+      "code": "5483",
+      "name": "中美晶",
+      "trade_value": 4818094500.0,
+      "market_rank": 48,
+      "rank_change": -20,
+      "group": "矽晶圓材料",
+      "is_new_entrant_top50": false,
+      "is_first_ever_top50": false,
+      "is_jump_into_top30": false
+    },
+    {
+      "code": "3363",
+      "name": "上詮",
+      "trade_value": 4669464000.0,
+      "market_rank": 49,
+      "rank_change": 39,
+      "group": "CPO光模組",
+      "is_new_entrant_top50": true,
+      "is_first_ever_top50": true,
+      "is_jump_into_top30": false
+    },
+    {
+      "code": "2360",
+      "name": "致茂",
+      "trade_value": 4656599800.0,
+      "market_rank": 50,
+      "rank_change": 3,
+      "group": "測試設備",
+      "is_new_entrant_top50": true,
+      "is_first_ever_top50": false,
+      "is_jump_into_top30": false
+    }
+  ],
+  "group_ranking": [
+    {
+      "name": "晶圓代工",
+      "total_value": 90941687229.0,
+      "rank": 1,
+      "rank_change": 0,
+      "rank_up_3_or_more": false,
+      "new_entrant_top7": false
+    },
+    {
+      "name": "矽晶圓材料",
+      "total_value": 22738086232.0,
+      "rank": 12,
+      "rank_change": -5,
+      "rank_up_3_or_more": false,
+      "new_entrant_top7": false
+    },
+    {
+      "name": "IC/IP設計",
+      "total_value": 57808553522.0,
+      "rank": 4,
+      "rank_change": null,
+      "rank_up_3_or_more": false,
+      "new_entrant_top7": true
+    },
+    {
+      "name": "記憶體",
+      "total_value": 76340723991.0,
+      "rank": 2,
+      "rank_change": 1,
+      "rank_up_3_or_more": false,
+      "new_entrant_top7": false
+    },
+    {
+      "name": "封測",
+      "total_value": 31978886355.0,
+      "rank": 8,
+      "rank_change": -2,
+      "rank_up_3_or_more": false,
+      "new_entrant_top7": false
+    },
+    {
+      "name": "測試設備",
+      "total_value": 12505254085.0,
+      "rank": 16,
+      "rank_change": 1,
+      "rank_up_3_or_more": false,
+      "new_entrant_top7": false
+    },
+    {
+      "name": "ABF載板",
+      "total_value": 56493326869.0,
+      "rank": 5,
+      "rank_change": -3,
+      "rank_up_3_or_more": false,
+      "new_entrant_top7": false
+    },
+    {
+      "name": "CCL",
+      "total_value": 22655324541.0,
+      "rank": 13,
+      "rank_change": -3,
+      "rank_up_3_or_more": false,
+      "new_entrant_top7": false
+    },
+    {
+      "name": "PCB",
+      "total_value": 26013702087.0,
+      "rank": 10,
+      "rank_change": -1,
+      "rank_up_3_or_more": false,
+      "new_entrant_top7": false
+    },
+    {
+      "name": "被動元件",
+      "total_value": 29728566243.0,
+      "rank": 9,
+      "rank_change": -1,
+      "rank_up_3_or_more": false,
+      "new_entrant_top7": false
+    },
+    {
+      "name": "散熱原件",
+      "total_value": 23965961674.0,
+      "rank": 11,
+      "rank_change": null,
+      "rank_up_3_or_more": false,
+      "new_entrant_top7": false
+    },
+    {
+      "name": "伺服器ODM",
+      "total_value": 69901396710.0,
+      "rank": 3,
+      "rank_change": 1,
+      "rank_up_3_or_more": false,
+      "new_entrant_top7": false
+    },
+    {
+      "name": "電源管理",
+      "total_value": 16261726259.0,
+      "rank": 14,
+      "rank_change": 2,
+      "rank_up_3_or_more": false,
+      "new_entrant_top7": false
+    },
+    {
+      "name": "連接器精密零組件",
+      "total_value": 7486959665.0,
+      "rank": 18,
+      "rank_change": -4,
+      "rank_up_3_or_more": false,
+      "new_entrant_top7": false
+    },
+    {
+      "name": "光通訊原料",
+      "total_value": 44009621600.0,
+      "rank": 6,
+      "rank_change": 7,
+      "rank_up_3_or_more": true,
+      "new_entrant_top7": true
+    },
+    {
+      "name": "CPO光模組",
+      "total_value": 37825157344.0,
+      "rank": 7,
+      "rank_change": 5,
+      "rank_up_3_or_more": true,
+      "new_entrant_top7": true
+    },
+    {
+      "name": "面板",
+      "total_value": 13330779597.0,
+      "rank": 15,
+      "rank_change": 0,
+      "rank_up_3_or_more": false,
+      "new_entrant_top7": false
+    },
+    {
+      "name": "工業電腦",
+      "total_value": 5805587618.0,
+      "rank": 19,
+      "rank_change": -1,
+      "rank_up_3_or_more": false,
+      "new_entrant_top7": false
+    },
+    {
+      "name": "半導體設備廠務",
+      "total_value": 11692955762.0,
+      "rank": 17,
+      "rank_change": 2,
+      "rank_up_3_or_more": false,
+      "new_entrant_top7": false
+    },
+    {
+      "name": "通信網路",
+      "total_value": 3627658175.0,
+      "rank": 22,
+      "rank_change": null,
+      "rank_up_3_or_more": false,
+      "new_entrant_top7": false
+    },
+    {
+      "name": "主動元件",
+      "total_value": 2585402672.0,
+      "rank": 23,
+      "rank_change": null,
+      "rank_up_3_or_more": false,
+      "new_entrant_top7": false
+    },
+    {
+      "name": "電子零組件",
+      "total_value": 4514318125.0,
+      "rank": 20,
+      "rank_change": null,
+      "rank_up_3_or_more": false,
+      "new_entrant_top7": false
+    },
+    {
+      "name": "其他",
+      "total_value": 2449403160.0,
+      "rank": 24,
+      "rank_change": null,
+      "rank_up_3_or_more": false,
+      "new_entrant_top7": false
+    },
+    {
+      "name": "低軌衛星",
+      "total_value": 4085373927.0,
+      "rank": 21,
+      "rank_change": null,
+      "rank_up_3_or_more": false,
+      "new_entrant_top7": false
+    }
+  ]
+}
