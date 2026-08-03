@@ -1,12 +1,12 @@
 {
-  "date": "2026-07-31",
+  "date": "2026-08-03",
   "indicators": {
     "tpex_weekly_macd": {
       "status": "ok",
       "state": "持續下降",
-      "weeks_in_state": 8,
+      "weeks_in_state": 9,
       "unconfirmed_signal": false,
-      "confirmed_weeks_available": 53
+      "confirmed_weeks_available": 54
     },
     "taiex_monthly_ma": {
       "status": "ok",
@@ -27,33 +27,89 @@
       "is_new_entry_top20": false
     },
     {
-      "code": "2308",
-      "name": "台達電",
+      "code": "2303",
+      "name": "聯電",
       "rank": 2,
-      "group_custom": "電源管理",
-      "group_official": "電子零組件業",
-      "is_new_entry_top20": false
-    },
-    {
-      "code": "2317",
-      "name": "鴻海",
-      "rank": 3,
-      "group_custom": "伺服器ODM",
-      "group_official": "其他電子業",
-      "is_new_entry_top20": false
+      "group_custom": "晶圓代工",
+      "group_official": "半導體業",
+      "is_new_entry_top20": true
     },
     {
       "code": "3231",
       "name": "緯創",
-      "rank": 4,
+      "rank": 3,
       "group_custom": "伺服器ODM",
       "group_official": "電腦及週邊設備業",
       "is_new_entry_top20": false
     },
     {
+      "code": "2454",
+      "name": "聯發科",
+      "rank": 4,
+      "group_custom": "IC/IP設計",
+      "group_official": "半導體業",
+      "is_new_entry_top20": false
+    },
+    {
+      "code": "2308",
+      "name": "台達電",
+      "rank": 5,
+      "group_custom": "電源管理",
+      "group_official": "電子零組件業",
+      "is_new_entry_top20": false
+    },
+    {
+      "code": "1303",
+      "name": "南亞",
+      "rank": 6,
+      "group_custom": null,
+      "group_official": "塑膠工業",
+      "is_new_entry_top20": true
+    },
+    {
+      "code": "4958",
+      "name": "臻鼎-KY",
+      "rank": 7,
+      "group_custom": "ABF載板",
+      "group_official": "電子零組件業",
+      "is_new_entry_top20": false
+    },
+    {
+      "code": "2408",
+      "name": "南亞科",
+      "rank": 8,
+      "group_custom": "記憶體",
+      "group_official": "半導體業",
+      "is_new_entry_top20": true
+    },
+    {
+      "code": "2383",
+      "name": "台光電",
+      "rank": 9,
+      "group_custom": "CCL",
+      "group_official": "電子零組件業",
+      "is_new_entry_top20": false
+    },
+    {
+      "code": "6669",
+      "name": "緯穎",
+      "rank": 10,
+      "group_custom": "伺服器ODM",
+      "group_official": "電腦及週邊設備業",
+      "is_new_entry_top20": false
+    },
+    {
+      "code": "3037",
+      "name": "欣興",
+      "rank": 11,
+      "group_custom": "ABF載板",
+      "group_official": "電子零組件業",
+      "is_new_entry_top20": true
+    },
+    {
       "code": "3481",
       "name": "群創",
-      "rank": 5,
+      "rank": 12,
       "group_custom": "面板",
       "group_official": "光電業",
       "is_new_entry_top20": false
@@ -61,121 +117,65 @@
     {
       "code": "6488",
       "name": "環球晶",
-      "rank": 6,
+      "rank": 13,
       "group_custom": "矽晶圓材料",
       "group_official": "半導體業",
-      "is_new_entry_top20": true
+      "is_new_entry_top20": false
     },
     {
-      "code": "5483",
-      "name": "中美晶",
-      "rank": 7,
-      "group_custom": "矽晶圓材料",
-      "group_official": "半導體業",
-      "is_new_entry_top20": true
-    },
-    {
-      "code": "2382",
-      "name": "廣達",
-      "rank": 8,
+      "code": "2317",
+      "name": "鴻海",
+      "rank": 14,
       "group_custom": "伺服器ODM",
+      "group_official": "其他電子業",
+      "is_new_entry_top20": false
+    },
+    {
+      "code": "7769",
+      "name": "鴻勁",
+      "rank": 15,
+      "group_custom": "測試設備",
+      "group_official": "半導體業",
+      "is_new_entry_top20": true
+    },
+    {
+      "code": "2327",
+      "name": "國巨*",
+      "rank": 16,
+      "group_custom": "被動元件",
+      "group_official": "電子零組件業",
+      "is_new_entry_top20": true
+    },
+    {
+      "code": "6770",
+      "name": "力積電",
+      "rank": 17,
+      "group_custom": "晶圓代工",
+      "group_official": "半導體業",
+      "is_new_entry_top20": true
+    },
+    {
+      "code": "3017",
+      "name": "奇鋐",
+      "rank": 18,
+      "group_custom": "散熱原件",
       "group_official": "電腦及週邊設備業",
       "is_new_entry_top20": false
     },
     {
-      "code": "2360",
-      "name": "致茂",
-      "rank": 9,
-      "group_custom": "測試設備",
-      "group_official": "其他電子業",
-      "is_new_entry_top20": true
-    },
-    {
-      "code": "3008",
-      "name": "大立光",
-      "rank": 10,
-      "group_custom": "CPO光模組",
-      "group_official": "光電業",
-      "is_new_entry_top20": true
-    },
-    {
-      "code": "2454",
-      "name": "聯發科",
-      "rank": 11,
-      "group_custom": "IC/IP設計",
-      "group_official": "半導體業",
-      "is_new_entry_top20": false
-    },
-    {
-      "code": "3661",
-      "name": "世芯-KY",
-      "rank": 12,
-      "group_custom": "IC/IP設計",
-      "group_official": "半導體業",
-      "is_new_entry_top20": true
-    },
-    {
-      "code": "3260",
-      "name": "威剛",
-      "rank": 13,
+      "code": "2344",
+      "name": "華邦電",
+      "rank": 19,
       "group_custom": "記憶體",
       "group_official": "半導體業",
       "is_new_entry_top20": true
     },
     {
-      "code": "2379",
-      "name": "瑞昱",
-      "rank": 14,
-      "group_custom": "IC/IP設計",
-      "group_official": "半導體業",
-      "is_new_entry_top20": true
-    },
-    {
-      "code": "6669",
-      "name": "緯穎",
-      "rank": 15,
-      "group_custom": "伺服器ODM",
-      "group_official": "電腦及週邊設備業",
-      "is_new_entry_top20": false
-    },
-    {
-      "code": "2357",
-      "name": "華碩",
-      "rank": 16,
-      "group_custom": "伺服器ODM",
-      "group_official": "電腦及週邊設備業",
-      "is_new_entry_top20": true
-    },
-    {
-      "code": "2383",
-      "name": "台光電",
-      "rank": 17,
-      "group_custom": "CCL",
-      "group_official": "電子零組件業",
-      "is_new_entry_top20": false
-    },
-    {
-      "code": "4958",
-      "name": "臻鼎-KY",
-      "rank": 18,
-      "group_custom": "ABF載板",
-      "group_official": "電子零組件業",
-      "is_new_entry_top20": false
-    },
-    {
-      "code": "3017",
-      "name": "奇鋐",
-      "rank": 19,
-      "group_custom": "散熱原件",
-      "group_official": "電腦及週邊設備業",
-      "is_new_entry_top20": true
-    },
-    {
-      "code": "8039",
-      "name": "台虹",
+      "code": "3665",
+      "name": "貿聯-KY",
       "rank": 20,
-      "group_custom": "PCB",
-      "group_official": "電子零組件業",
+      "group_custom": "連接器精密零組件",
+      "group_official": "其他電子業",
       "is_new_entry_top20": true
     }
   ]
