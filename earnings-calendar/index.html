@@ -23,6 +23,9 @@
   --accent2-soft-fg: #7c4a03;
   --neutral-bg: #eeece7;
   --neutral-fg: #8a8378;
+  --tier-strong-border: transparent;
+  --tier-mid-border: transparent;
+  --tier-low-border: transparent;
   --today-outline: #2563eb;
   --selected-outline: #2a2622;
   --danger: #b3261e;
@@ -40,14 +43,17 @@
     --accent: #6a9bff;
     --accent-soft: #2a3a5c;
     --success: #5fd190;
-    --success-strong-bg: #1f5c39;
-    --success-strong-fg: #d9f0e1;
-    --success-soft-bg: #21382a;
-    --success-soft-fg: #8fd9ab;
-    --accent2-soft-bg: #4a3a1a;
-    --accent2-soft-fg: #f0c878;
-    --neutral-bg: #322e28;
-    --neutral-fg: #8a8378;
+    --success-strong-bg: #1e8a54;
+    --success-strong-fg: #f1fff6;
+    --success-soft-bg: #2f5a3e;
+    --success-soft-fg: #b7f0cb;
+    --accent2-soft-bg: #7a5a1e;
+    --accent2-soft-fg: #ffe1a0;
+    --neutral-bg: #3d3830;
+    --neutral-fg: #bcb4a6;
+    --tier-strong-border: #2fb374;
+    --tier-mid-border: #4a7a5c;
+    --tier-low-border: #a3812f;
     --today-outline: #6a9bff;
     --selected-outline: #ece8e1;
     --danger: #ff6f66;
@@ -57,9 +63,10 @@
 :root[data-theme="dark"] {
   --bg: #1c1a17; --panel: #26231f; --border: #3a3630; --text: #ece8e1;
   --text-dim: #a89f93; --text-faint: #726b60; --accent: #6a9bff; --accent-soft: #2a3a5c;
-  --success: #5fd190; --success-strong-bg: #1f5c39; --success-strong-fg: #d9f0e1;
-  --success-soft-bg: #21382a; --success-soft-fg: #8fd9ab; --accent2-soft-bg: #4a3a1a;
-  --accent2-soft-fg: #f0c878; --neutral-bg: #322e28; --neutral-fg: #8a8378;
+  --success: #5fd190; --success-strong-bg: #1e8a54; --success-strong-fg: #f1fff6;
+  --success-soft-bg: #2f5a3e; --success-soft-fg: #b7f0cb; --accent2-soft-bg: #7a5a1e;
+  --accent2-soft-fg: #ffe1a0; --neutral-bg: #3d3830; --neutral-fg: #bcb4a6;
+  --tier-strong-border: #2fb374; --tier-mid-border: #4a7a5c; --tier-low-border: #a3812f;
   --today-outline: #6a9bff; --selected-outline: #ece8e1; --danger: #ff6f66;
   --shadow: 0 1px 2px rgba(0,0,0,0.3), 0 1px 8px rgba(0,0,0,0.2);
 }
@@ -69,6 +76,7 @@
   --success: #16743d; --success-strong-bg: #16743d; --success-strong-fg: #ffffff;
   --success-soft-bg: #d9f0e1; --success-soft-fg: #14532d; --accent2-soft-bg: #fde9c8;
   --accent2-soft-fg: #7c4a03; --neutral-bg: #eeece7; --neutral-fg: #8a8378;
+  --tier-strong-border: transparent; --tier-mid-border: transparent; --tier-low-border: transparent;
   --today-outline: #2563eb; --selected-outline: #2a2622; --danger: #b3261e;
   --shadow: 0 1px 2px rgba(0,0,0,0.06), 0 1px 8px rgba(0,0,0,0.04);
 }
@@ -113,9 +121,9 @@ body {
   transition: transform .06s ease;
 }
 .completion-cell:hover { transform: translateY(-1px); }
-.completion-cell.tier-high { background: var(--success-strong-bg); color: var(--success-strong-fg); }
-.completion-cell.tier-mid { background: var(--success-soft-bg); color: var(--success-soft-fg); }
-.completion-cell.tier-low { background: var(--accent2-soft-bg); color: var(--accent2-soft-fg); }
+.completion-cell.tier-high { background: var(--success-strong-bg); color: var(--success-strong-fg); box-shadow: inset 0 0 0 1px var(--tier-strong-border); }
+.completion-cell.tier-mid { background: var(--success-soft-bg); color: var(--success-soft-fg); box-shadow: inset 0 0 0 1px var(--tier-mid-border); }
+.completion-cell.tier-low { background: var(--accent2-soft-bg); color: var(--accent2-soft-fg); box-shadow: inset 0 0 0 1px var(--tier-low-border); }
 .completion-cell.selected { border-color: var(--selected-outline); }
 .completion-cell .g-name { font-size: 12px; font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .completion-cell .g-pct { font-size: 15px; font-weight: 700; }
@@ -163,6 +171,21 @@ body {
   cursor: pointer; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
 }
 .day-more { font-size: 10.5px; color: var(--text-faint); padding: 1px 4px; }
+.day-more.clickable { cursor: pointer; text-decoration: underline dotted; }
+.day-more.clickable:hover { color: var(--accent); }
+.day-popover {
+  position: fixed; z-index: 50; background: var(--panel); border: 1px solid var(--border);
+  border-radius: 8px; box-shadow: var(--shadow); padding: 6px; max-height: 280px;
+  overflow-y: auto; min-width: 200px; max-width: 260px;
+}
+.day-popover .dp-row {
+  display: flex; align-items: center; gap: 7px; padding: 6px 8px; border-radius: 6px;
+  font-size: 12px; cursor: pointer;
+}
+.day-popover .dp-row:hover { background: var(--neutral-bg); }
+.day-popover .dp-dot { width: 9px; height: 9px; border-radius: 50%; flex-shrink: 0; }
+.day-popover .dp-name { flex: 1; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.day-popover .dp-group { font-size: 10px; color: var(--text-faint); white-space: nowrap; }
 
 /* Layer 3 output panel */
 .panel3 { min-height: 200px; display: flex; flex-direction: column; }
@@ -349,6 +372,12 @@ function groupColor(name) {
   return pal[idx];
 }
 
+const GROUP_DISPLAY_NAMES = {
+  'BMC': 'BMC（基板管理控制器）',
+  '美股七巨頭+雲端服務商': '美股七巨頭'
+};
+function displayGroupName(g) { return GROUP_DISPLAY_NAMES[g] || g; }
+
 function renderAll() {
   renderCompletionBar();
   renderCalendar();
@@ -391,7 +420,7 @@ function renderCompletionBar() {
     }
     cell.className = 'completion-cell' + (tier !== 'none' ? ' ' + tier : '') + (selectedGroups.has(r.g) ? ' selected' : '');
     cell.innerHTML = `
-      <div class="g-name">${escHtml(r.g)}</div>
+      <div class="g-name">${escHtml(displayGroupName(r.g))}</div>
       <div class="g-pct mono">${r.hasSession ? Math.round(r.pct*100)+'%' : '—'}</div>
       <div class="open-icon" title="開啟產出工具">📄</div>
     `;
@@ -418,7 +447,7 @@ function renderCalendar() {
     const chip = document.createElement('div');
     chip.className = 'filter-chip';
     chip.style.background = c.bg; chip.style.color = c.fg;
-    chip.innerHTML = `${escHtml(g)}<span class="x">✕</span>`;
+    chip.innerHTML = `${escHtml(displayGroupName(g))}<span class="x">✕</span>`;
     chip.querySelector('.x').addEventListener('click', () => { selectedGroups.delete(g); renderAll(); });
     chipsEl.appendChild(chip);
   });
@@ -472,30 +501,68 @@ function renderCalendar() {
     numEl.className = 'day-num'; numEl.textContent = dayNum;
     cell.appendChild(numEl);
 
-    const entries = byDate[dateStr] || [];
+    const entries = (byDate[dateStr] || []).slice().sort((a,b) => a.name.localeCompare(b.name,'zh-Hant'));
     if (entries.length) {
-      const perGroup = {};
-      entries.forEach(e => { perGroup[e.group] = (perGroup[e.group]||0) + 1; });
-      const sorted = Object.entries(perGroup).sort((a,b) => b[1]-a[1]);
-      const shown = sorted.slice(0,2);
-      shown.forEach(([g,n]) => {
-        const c = groupColor(g);
+      const shown = entries.slice(0,2);
+      shown.forEach(e => {
+        const c = groupColor(e.group);
         const tag = document.createElement('div');
         tag.className = 'day-tag';
         tag.style.background = c.bg; tag.style.color = c.fg;
-        tag.textContent = `${g} ${n}`;
-        tag.addEventListener('click', () => openPanelFor(g, dateStr));
+        tag.textContent = e.name;
+        tag.title = `${e.name}（${displayGroupName(e.group)}）`;
+        tag.addEventListener('click', () => openPanelFor(e.group, dateStr));
         cell.appendChild(tag);
       });
-      if (sorted.length > 2) {
+      if (entries.length > 2) {
         const more = document.createElement('div');
-        more.className = 'day-more';
-        more.textContent = `＋${sorted.length-2}`;
+        more.className = 'day-more clickable';
+        more.textContent = `＋${entries.length-2} 展開`;
+        more.addEventListener('click', (ev) => { ev.stopPropagation(); toggleDayPopover(entries, more, dateStr); });
         cell.appendChild(more);
       }
     }
     grid.appendChild(cell);
   }
+}
+
+let activePopover = null;
+let activePopoverAnchor = null;
+function closeDayPopover() {
+  if (activePopover) {
+    activePopover.remove();
+    activePopover = null;
+    activePopoverAnchor = null;
+    document.removeEventListener('click', onDocClickClosePopover);
+  }
+}
+function onDocClickClosePopover(ev) {
+  if (activePopover && !activePopover.contains(ev.target)) closeDayPopover();
+}
+function toggleDayPopover(entries, anchorEl, dateStr) {
+  if (activePopoverAnchor === anchorEl) { closeDayPopover(); return; }
+  showDayPopover(entries, anchorEl, dateStr);
+}
+function showDayPopover(entries, anchorEl, dateStr) {
+  closeDayPopover();
+  const rect = anchorEl.getBoundingClientRect();
+  const pop = document.createElement('div');
+  pop.className = 'day-popover';
+  const left = Math.min(rect.left, window.innerWidth - 264);
+  pop.style.left = Math.max(8, left) + 'px';
+  pop.style.top = (rect.bottom + 4) + 'px';
+  entries.forEach(e => {
+    const c = groupColor(e.group);
+    const row = document.createElement('div');
+    row.className = 'dp-row';
+    row.innerHTML = `<span class="dp-dot" style="background:${c.bg}"></span><span class="dp-name">${escHtml(e.name)}</span><span class="dp-group">${escHtml(displayGroupName(e.group))}</span>`;
+    row.addEventListener('click', () => { openPanelFor(e.group, dateStr); closeDayPopover(); });
+    pop.appendChild(row);
+  });
+  document.body.appendChild(pop);
+  activePopover = pop;
+  activePopoverAnchor = anchorEl;
+  setTimeout(() => document.addEventListener('click', onDocClickClosePopover), 0);
 }
 
 /* ---------- Layer 3 ---------- */
@@ -521,7 +588,7 @@ function renderPanel3() {
 
   box.innerHTML = `
     <div class="panel3-head">
-      <span class="g-chip" style="background:${c.bg};color:${c.fg}">${escHtml(group)}</span>
+      <span class="g-chip" style="background:${c.bg};color:${c.fg}">${escHtml(displayGroupName(group))}</span>
       <span class="date-txt">${date ? date : '無場次'}</span>
       <span class="close-x" id="panel-close">✕</span>
     </div>
@@ -585,13 +652,14 @@ function updateStockBtn() {
 
 function generateCommand(kind, group, date, members) {
   const qLabel = `${qYear} Q${qQ} 財報季`;
+  const groupLabel = displayGroupName(group);
   let text;
   if (kind === 'industry') {
     const lines = members.map(m => `- ${m.name}（${m.code}／${m.market}）｜場次日期：${m.earnings_date || '無'}｜狀態：${m.status}`).join('\n');
-    text = `【產業分析報告】\n族群：${group}\n財報季：${qLabel}\n族群成分股（共 ${members.length} 家）：\n${lines}\n\n報告格式規格：${SPEC_INDUSTRY}\n請依規格搜尋族群內每家公司近期法說會內容，統整為產業分析報告。`;
+    text = `【產業分析報告】\n族群：${groupLabel}\n財報季：${qLabel}\n族群成分股（共 ${members.length} 家）：\n${lines}\n\n報告格式規格：${SPEC_INDUSTRY}\n請依規格搜尋族群內每家公司近期法說會內容，統整為產業分析報告。`;
   } else {
     const lines = members.map(m => `- ${m.name}｜代碼：${m.code}｜市場：${m.market}｜場次日期：${m.earnings_date || '無'}`).join('\n');
-    text = `【個股財報稽核卡】\n族群：${group}\n財報季：${qLabel}\n選取個股（共 ${members.length} 家）：\n${lines}\n\n報告格式規格：${SPEC_STOCK}\n請依規格為以上每支個股分別產出財報稽核卡。`;
+    text = `【個股財報稽核卡】\n族群：${groupLabel}\n財報季：${qLabel}\n選取個股（共 ${members.length} 家）：\n${lines}\n\n報告格式規格：${SPEC_STOCK}\n請依規格為以上每支個股分別產出財報稽核卡。`;
   }
 
   document.getElementById('cmd-box').style.display = 'block';

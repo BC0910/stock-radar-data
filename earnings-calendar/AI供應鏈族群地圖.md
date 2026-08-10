@@ -1,6 +1,6 @@
 # AI供應鏈族群地圖
 
-最後更新：2026-08-06（修正台勝科、鎧俠股票代碼誤植）
+最後更新：2026-08-11（CoreWeave改歸類至AI應用軟體，原七巨頭+雲端服務商分類有誤）
 用途：①產業報告查代表個股時的參考依據　②法說會/財報清單的基礎池
 說明：橫跨台/美/日/韓/中/歐六地；同一檔股票橫跨多個族群時會重複出現並註記
 
@@ -114,10 +114,10 @@
 
 ### 美股七巨頭＋雲端服務商
 - 蘋果(AAPL)、微軟(MSFT)、Alphabet(GOOGL)、亞馬遜(AMZN)、Meta(META)、特斯拉(TSLA)
-- 輝達（同IC設計）、甲骨文 Oracle（美／ORCL）、CoreWeave（美／CRWV）
+- 輝達（同IC設計）、甲骨文 Oracle（美／ORCL）
 
 ### AI應用軟體
-- Palantir（美／PLTR）、ServiceNow（美／NOW）、Salesforce（美／CRM）、Snowflake（美／SNOW）
+- Palantir（美／PLTR）、ServiceNow（美／NOW）、Salesforce（美／CRM）、Snowflake（美／SNOW）、CoreWeave（美／CRWV）
 - 精誠 SYSTEX(6214)、伊雲谷(6689)
 
 ### 資安
