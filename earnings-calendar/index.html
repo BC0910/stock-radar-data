@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>財報工具</title>
+<style>
+:root {
+  --bg: #f6f5f2;
+  --panel: #ffffff;
+  --border: #e0ddd6;
+  --text: #2a2622;
+  --text-dim: #78726a;
+  --text-faint: #a89f93;
+  --accent: #2563eb;
+  --accent-soft: #dbe6fd;
+  --success: #16743d;
+  --success-strong-bg: #16743d;
+  --success-strong-fg: #ffffff;
+  --success-soft-bg: #d9f0e1;
+  --success-soft-fg: #14532d;
+  --accent2-soft-bg: #fde9c8;
+  --accent2-soft-fg: #7c4a03;
+  --neutral-bg: #eeece7;
+  --neutral-fg: #8a8378;
+  --today-outline: #2563eb;
+  --selected-outline: #2a2622;
+  --danger: #b3261e;
+  --shadow: 0 1px 2px rgba(0,0,0,0.06), 0 1px 8px rgba(0,0,0,0.04);
+  --group-colors: 8;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #1c1a17;
+    --panel: #26231f;
+    --border: #3a3630;
+    --text: #ece8e1;
+    --text-dim: #a89f93;
+    --text-faint: #726b60;
+    --accent: #6a9bff;
+    --accent-soft: #2a3a5c;
+    --success: #5fd190;
+    --success-strong-bg: #1f5c39;
+    --success-strong-fg: #d9f0e1;
+    --success-soft-bg: #21382a;
+    --success-soft-fg: #8fd9ab;
+    --accent2-soft-bg: #4a3a1a;
+    --accent2-soft-fg: #f0c878;
+    --neutral-bg: #322e28;
+    --neutral-fg: #8a8378;
+    --today-outline: #6a9bff;
+    --selected-outline: #ece8e1;
+    --danger: #ff6f66;
+    --shadow: 0 1px 2px rgba(0,0,0,0.3), 0 1px 8px rgba(0,0,0,0.2);
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #1c1a17; --panel: #26231f; --border: #3a3630; --text: #ece8e1;
+  --text-dim: #a89f93; --text-faint: #726b60; --accent: #6a9bff; --accent-soft: #2a3a5c;
+  --success: #5fd190; --success-strong-bg: #1f5c39; --success-strong-fg: #d9f0e1;
+  --success-soft-bg: #21382a; --success-soft-fg: #8fd9ab; --accent2-soft-bg: #4a3a1a;
+  --accent2-soft-fg: #f0c878; --neutral-bg: #322e28; --neutral-fg: #8a8378;
+  --today-outline: #6a9bff; --selected-outline: #ece8e1; --danger: #ff6f66;
+  --shadow: 0 1px 2px rgba(0,0,0,0.3), 0 1px 8px rgba(0,0,0,0.2);
+}
+:root[data-theme="light"] {
+  --bg: #f6f5f2; --panel: #ffffff; --border: #e0ddd6; --text: #2a2622;
+  --text-dim: #78726a; --text-faint: #a89f93; --accent: #2563eb; --accent-soft: #dbe6fd;
+  --success: #16743d; --success-strong-bg: #16743d; --success-strong-fg: #ffffff;
+  --success-soft-bg: #d9f0e1; --success-soft-fg: #14532d; --accent2-soft-bg: #fde9c8;
+  --accent2-soft-fg: #7c4a03; --neutral-bg: #eeece7; --neutral-fg: #8a8378;
+  --today-outline: #2563eb; --selected-outline: #2a2622; --danger: #b3261e;
+  --shadow: 0 1px 2px rgba(0,0,0,0.06), 0 1px 8px rgba(0,0,0,0.04);
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0; background: var(--bg); color: var(--text);
+  font-family: -apple-system, "Segoe UI", "PingFang TC", "Microsoft JhengHei", sans-serif;
+  font-size: 14px; line-height: 1.5; min-width: 1180px;
+}
+.mono { font-variant-numeric: tabular-nums; }
+.wrap { max-width: 1440px; margin: 0 auto; padding: 20px 24px 60px; }
+.topbar { display: flex; align-items: center; justify-content: space-between; margin-bottom: 16px; }
+.topbar h1 { font-size: 18px; margin: 0; font-weight: 700; }
+.topbar .meta { color: var(--text-dim); font-size: 12px; }
+.refresh-btn {
+  border: 1px solid var(--border); background: var(--panel); color: var(--text);
+  padding: 6px 14px; border-radius: 7px; cursor: pointer; font-size: 13px;
+}
+.refresh-btn:hover { border-color: var(--accent); color: var(--accent); }
+.refresh-btn:disabled { opacity: 0.5; cursor: default; }
+
+/* Layer 1 */
+.completion-layer { margin-bottom: 16px; }
+.completion-head { display: flex; align-items: center; justify-content: space-between; margin-bottom: 8px; }
+.completion-head .label { font-weight: 700; font-size: 13px; color: var(--text-dim); }
+.q-nav { display: flex; align-items: center; gap: 6px; }
+.q-nav button {
+  border: 1px solid var(--border); background: var(--panel); color: var(--text);
+  width: 26px; height: 26px; border-radius: 6px; cursor: pointer; font-size: 13px;
+}
+.q-nav button:hover { border-color: var(--accent); color: var(--accent); }
+.q-nav .q-label { font-weight: 700; font-size: 13px; min-width: 108px; text-align: center; }
+.q-nav .today-btn { width: auto; padding: 0 10px; font-size: 12px; }
+.completion-grid {
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(108px, 1fr));
+  gap: 6px;
+}
+.completion-cell {
+  position: relative; border-radius: 8px; padding: 8px 10px; cursor: pointer;
+  border: 2px solid transparent; background: var(--neutral-bg); color: var(--neutral-fg);
+  min-height: 46px; display: flex; flex-direction: column; justify-content: center; gap: 2px;
+  transition: transform .06s ease;
+}
+.completion-cell:hover { transform: translateY(-1px); }
+.completion-cell.tier-high { background: var(--success-strong-bg); color: var(--success-strong-fg); }
+.completion-cell.tier-mid { background: var(--success-soft-bg); color: var(--success-soft-fg); }
+.completion-cell.tier-low { background: var(--accent2-soft-bg); color: var(--accent2-soft-fg); }
+.completion-cell.selected { border-color: var(--selected-outline); }
+.completion-cell .g-name { font-size: 12px; font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.completion-cell .g-pct { font-size: 15px; font-weight: 700; }
+.completion-cell .open-icon {
+  position: absolute; top: 4px; right: 4px; width: 18px; height: 18px;
+  display: flex; align-items: center; justify-content: center; border-radius: 4px;
+  opacity: 0.75; font-size: 12px;
+}
+.completion-cell .open-icon:hover { opacity: 1; background: rgba(0,0,0,0.12); }
+
+/* Main grid: calendar + panel */
+.main-grid { display: grid; grid-template-columns: 3fr 1fr; gap: 16px; align-items: start; }
+
+.panel-box { background: var(--panel); border: 1px solid var(--border); border-radius: 10px; box-shadow: var(--shadow); }
+
+/* Layer 2 calendar */
+.cal-filterbar { display: flex; align-items: center; gap: 8px; padding: 12px 14px; flex-wrap: wrap; border-bottom: 1px solid var(--border); }
+.cal-title { font-weight: 700; font-size: 15px; margin-right: 4px; white-space: nowrap; }
+.m-nav { display: flex; align-items: center; gap: 4px; }
+.m-nav button {
+  border: 1px solid var(--border); background: var(--bg); color: var(--text);
+  width: 24px; height: 24px; border-radius: 5px; cursor: pointer; font-size: 12px;
+}
+.m-nav .today-btn { width: auto; padding: 0 8px; font-size: 11px; }
+.filter-chip {
+  display: inline-flex; align-items: center; gap: 5px; padding: 3px 8px 3px 10px;
+  border-radius: 999px; font-size: 12px; font-weight: 600;
+}
+.filter-chip .x { cursor: pointer; opacity: 0.7; font-size: 13px; line-height: 1; }
+.filter-chip .x:hover { opacity: 1; }
+.filter-count { margin-left: auto; font-size: 12px; color: var(--text-dim); white-space: nowrap; }
+.cal-grid { display: grid; grid-template-columns: repeat(7, 1fr); }
+.cal-dow { text-align: center; font-size: 11px; color: var(--text-faint); padding: 6px 0; border-bottom: 1px solid var(--border); }
+.cal-day {
+  min-height: 92px; border-right: 1px solid var(--border); border-bottom: 1px solid var(--border);
+  padding: 5px 6px; position: relative; display: flex; flex-direction: column; gap: 3px;
+}
+.cal-day:nth-child(7n) { border-right: none; }
+.cal-day.other-month { background: color-mix(in srgb, var(--bg) 55%, transparent); }
+.cal-day.other-month .day-num { color: var(--text-faint); }
+.cal-day.today { outline: 2px solid var(--today-outline); outline-offset: -2px; border-radius: 4px; }
+.day-num { font-size: 11px; color: var(--text-dim); font-weight: 600; }
+.day-tag {
+  font-size: 10.5px; font-weight: 700; padding: 2px 6px; border-radius: 5px;
+  cursor: pointer; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+.day-more { font-size: 10.5px; color: var(--text-faint); padding: 1px 4px; }
+
+/* Layer 3 output panel */
+.panel3 { min-height: 200px; display: flex; flex-direction: column; }
+.panel3-empty { padding: 30px 16px; color: var(--text-faint); font-size: 12.5px; text-align: center; line-height: 1.8; }
+.panel3-head { display: flex; align-items: center; gap: 8px; padding: 12px 14px; border-bottom: 1px solid var(--border); }
+.panel3-head .g-chip { padding: 3px 10px; border-radius: 999px; font-size: 12px; font-weight: 700; }
+.panel3-head .date-txt { font-size: 12px; color: var(--text-dim); flex: 1; }
+.panel3-head .close-x { cursor: pointer; color: var(--text-faint); font-size: 16px; padding: 2px 4px; }
+.panel3-head .close-x:hover { color: var(--danger); }
+.output-btn-primary {
+  margin: 12px 14px 8px; padding: 10px; border-radius: 8px; border: none;
+  background: var(--accent); color: #fff; font-weight: 700; font-size: 13.5px; cursor: pointer;
+}
+.output-btn-primary:hover { filter: brightness(1.08); }
+.stock-list { flex: 1; overflow-y: auto; max-height: 420px; padding: 0 6px; }
+.stock-row {
+  display: flex; align-items: center; gap: 8px; padding: 7px 8px; border-radius: 6px; font-size: 12.5px;
+}
+.stock-row.hit { background: var(--accent-soft); }
+.stock-row .s-name { flex: 1; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.stock-row .s-hit-date { color: var(--accent); font-weight: 700; font-size: 11.5px; }
+.stock-row .s-status { font-size: 11px; color: var(--text-dim); white-space: nowrap; }
+.stock-row .s-status.produced { color: var(--success); cursor: pointer; }
+.stock-row .s-status.produced:hover { text-decoration: underline; }
+.output-btn-secondary {
+  margin: 8px 14px 14px; padding: 8px; border-radius: 8px; border: 1px solid var(--border);
+  background: var(--panel); color: var(--text); font-weight: 600; font-size: 12.5px; cursor: pointer;
+}
+.output-btn-secondary:hover { border-color: var(--accent); color: var(--accent); }
+.output-btn-secondary:disabled { opacity: 0.45; cursor: default; }
+
+/* Command output */
+.cmd-box { margin: 0 14px 14px; }
+.cmd-box textarea {
+  width: 100%; min-height: 140px; resize: vertical; border: 1px solid var(--border);
+  border-radius: 8px; padding: 10px; font-family: ui-monospace, "Cascadia Code", monospace;
+  font-size: 11.5px; background: var(--bg); color: var(--text);
+}
+.cmd-copy-btn {
+  margin-top: 6px; width: 100%; padding: 8px; border-radius: 7px; border: none;
+  background: var(--success-strong-bg); color: var(--success-strong-fg); font-weight: 700;
+  font-size: 12.5px; cursor: pointer;
+}
+.cmd-copy-btn.copied { background: var(--text-dim); }
+
+.legend { display: flex; gap: 14px; margin-top: 14px; font-size: 11px; color: var(--text-dim); flex-wrap: wrap; }
+.legend span.sw { display: inline-block; width: 10px; height: 10px; border-radius: 3px; margin-right: 4px; vertical-align: -1px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="topbar">
+    <h1>財報工具</h1>
+    <div style="display:flex; align-items:center; gap:10px;">
+      <span class="meta" id="last-refresh">尚未載入</span>
+      <button class="refresh-btn" id="refresh-btn" onclick="loadData()">手動刷新</button>
+    </div>
+  </div>
+
+  <div class="completion-layer panel-box" style="padding:12px 14px;">
+    <div class="completion-head">
+      <span class="label">族群完成度（<span id="q-scope-label"></span>）</span>
+      <div class="q-nav">
+        <button onclick="shiftQuarter(-1)">‹</button>
+        <span class="q-label" id="q-label"></span>
+        <button onclick="shiftQuarter(1)">›</button>
+        <button class="today-btn" onclick="resetQuarter()">回到本季</button>
+      </div>
+    </div>
+    <div class="completion-grid" id="completion-grid"></div>
+    <div class="legend">
+      <div><span class="sw" style="background:var(--success-strong-bg)"></span>80%以上</div>
+      <div><span class="sw" style="background:var(--success-soft-bg)"></span>60–79%</div>
+      <div><span class="sw" style="background:var(--accent2-soft-bg)"></span>40–59%</div>
+      <div><span class="sw" style="background:var(--neutral-bg)"></span>40%以下 / 無場次</div>
+    </div>
+  </div>
+
+  <div class="main-grid">
+    <div class="panel-box">
+      <div class="cal-filterbar">
+        <span class="cal-title" id="cal-title"></span>
+        <div class="m-nav">
+          <button onclick="shiftMonth(-1)">‹</button>
+          <button onclick="shiftMonth(1)">›</button>
+          <button class="today-btn" onclick="resetMonth()">回到本月</button>
+        </div>
+        <div id="filter-chips" style="display:flex; gap:6px; flex-wrap:wrap;"></div>
+        <span class="filter-count" id="filter-count"></span>
+      </div>
+      <div class="cal-grid" id="cal-grid"></div>
+    </div>
+
+    <div class="panel-box panel3" id="panel3"></div>
+  </div>
+</div>
+
+<script>
+const DATA_URL = 'https://raw.githubusercontent.com/BC0910/stock-radar-data/main/earnings-calendar/earnings_results.json';
+const SPEC_INDUSTRY = 'earnings-calendar/../產業分析報告_報告格式規格.md（Notion同名頁面）';
+const SPEC_STOCK = 'earnings-calendar/../財報稽核卡_報告格式規格.md（Notion同名頁面）';
+const STATUS_DONE = '已結束';
+const DOW = ['日','一','二','三','四','五','六'];
+
+let allData = [];
+let groupList = [];
+let groupColorIdx = {};
+let selectedGroups = new Set();
+let viewYear, viewMonth;
+let qYear, qQ;
+let openPanel = null;
+let checkedCodes = new Set();
+let producedMap = {};
+
+const LS_PRODUCED = 'ec_produced_v1';
+
+function loadProduced() {
+  try { producedMap = JSON.parse(localStorage.getItem(LS_PRODUCED) || '{}'); } catch(e) { producedMap = {}; }
+}
+function saveProduced() {
+  localStorage.setItem(LS_PRODUCED, JSON.stringify(producedMap));
+}
+
+function todayParts() {
+  const d = new Date();
+  return { y: d.getFullYear(), m: d.getMonth()+1, d: d.getDate(), str: fmtDate(d) };
+}
+function fmtDate(d) {
+  const y = d.getFullYear(), m = String(d.getMonth()+1).padStart(2,'0'), day = String(d.getDate()).padStart(2,'0');
+  return `${y}-${m}-${day}`;
+}
+function quarterOf(month) { return Math.floor((month-1)/3) + 1; }
+function quarterMonths(q) { return [ (q-1)*3+1, (q-1)*3+2, (q-1)*3+3 ]; }
+function quarterOfDateStr(s) {
+  if (!s) return null;
+  const parts = s.split('-');
+  if (parts.length < 2) return null;
+  return { y: parseInt(parts[0],10), q: quarterOf(parseInt(parts[1],10)) };
+}
+
+async function loadData() {
+  const btn = document.getElementById('refresh-btn');
+  btn.disabled = true; btn.textContent = '刷新中...';
+  try {
+    const res = await fetch(DATA_URL + '?t=' + Date.now(), { cache: 'no-store' });
+    if (!res.ok) throw new Error('HTTP ' + res.status);
+    allData = await res.json();
+    buildGroupIndex();
+    renderAll();
+    document.getElementById('last-refresh').textContent = '最後刷新：' + new Date().toLocaleString('zh-TW', { hour12:false });
+  } catch (e) {
+    document.getElementById('last-refresh').textContent = '刷新失敗：' + e.message;
+  } finally {
+    btn.disabled = false; btn.textContent = '手動刷新';
+  }
+}
+
+function buildGroupIndex() {
+  const names = Array.from(new Set(allData.map(d => d.group))).sort((a,b)=>a.localeCompare(b,'zh-Hant'));
+  groupList = names;
+  groupColorIdx = {};
+  names.forEach((n,i) => groupColorIdx[n] = i % 8);
+}
+
+const GROUP_PALETTE_LIGHT = [
+  {bg:'#dbe6fd', fg:'#1d3f8f'}, {bg:'#fde0c8', fg:'#8a4a12'}, {bg:'#e3d8fb', fg:'#5b2d9e'},
+  {bg:'#fcd9e6', fg:'#9c2f56'}, {bg:'#cdeef0', fg:'#0f6e73'}, {bg:'#fbedc0', fg:'#7a5a06'},
+  {bg:'#d8dffb', fg:'#31399e'}, {bg:'#e4ded1', fg:'#5c4f36'}
+];
+const GROUP_PALETTE_DARK = [
+  {bg:'#28345c', fg:'#aec2fb'}, {bg:'#5c3c1f', fg:'#f3c393'}, {bg:'#3c2f5c', fg:'#cbb3f5'},
+  {bg:'#5c2c3e', fg:'#f5aec8'}, {bg:'#1f4c4f', fg:'#8fdde2'}, {bg:'#4f4118', fg:'#f0d182'},
+  {bg:'#2b336b', fg:'#b7bffa'}, {bg:'#3f382a', fg:'#cfc2a0'}
+];
+function isDarkMode() {
+  const t = document.documentElement.getAttribute('data-theme');
+  if (t === 'dark') return true;
+  if (t === 'light') return false;
+  return window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+}
+function groupColor(name) {
+  const idx = groupColorIdx[name] || 0;
+  const pal = isDarkMode() ? GROUP_PALETTE_DARK : GROUP_PALETTE_LIGHT;
+  return pal[idx];
+}
+
+function renderAll() {
+  renderCompletionBar();
+  renderCalendar();
+  renderPanel3();
+}
+
+/* ---------- Layer 1 ---------- */
+function renderCompletionBar() {
+  document.getElementById('q-scope-label').textContent = `${qYear} Q${qQ} 財報季`;
+  document.getElementById('q-label').textContent = `${qYear} Q${qQ}`;
+
+  const rows = groupList.map(g => {
+    const members = allData.filter(d => d.group === g);
+    const total = members.length;
+    const inQuarter = members.filter(d => {
+      const qi = quarterOfDateStr(d.earnings_date);
+      return qi && qi.y === qYear && qi.q === qQ;
+    });
+    const done = inQuarter.filter(d => d.status === STATUS_DONE).length;
+    const hasSession = inQuarter.length > 0;
+    const pct = total ? done / total : 0;
+    return { g, total, done, hasSession, pct };
+  });
+
+  rows.sort((a,b) => {
+    if (a.hasSession !== b.hasSession) return a.hasSession ? -1 : 1;
+    return b.pct - a.pct;
+  });
+
+  const grid = document.getElementById('completion-grid');
+  grid.innerHTML = '';
+  rows.forEach(r => {
+    const cell = document.createElement('div');
+    let tier = 'none';
+    if (r.hasSession) {
+      if (r.pct >= 0.8) tier = 'tier-high';
+      else if (r.pct >= 0.6) tier = 'tier-mid';
+      else if (r.pct >= 0.4) tier = 'tier-low';
+      else tier = 'none';
+    }
+    cell.className = 'completion-cell' + (tier !== 'none' ? ' ' + tier : '') + (selectedGroups.has(r.g) ? ' selected' : '');
+    cell.innerHTML = `
+      <div class="g-name">${escHtml(r.g)}</div>
+      <div class="g-pct mono">${r.hasSession ? Math.round(r.pct*100)+'%' : '—'}</div>
+      <div class="open-icon" title="開啟產出工具">📄</div>
+    `;
+    cell.querySelector('.open-icon').addEventListener('click', (ev) => {
+      ev.stopPropagation();
+      openPanelFor(r.g, null);
+    });
+    cell.addEventListener('click', () => {
+      if (selectedGroups.has(r.g)) selectedGroups.delete(r.g); else selectedGroups.add(r.g);
+      renderAll();
+    });
+    grid.appendChild(cell);
+  });
+}
+
+/* ---------- Layer 2 ---------- */
+function renderCalendar() {
+  document.getElementById('cal-title').textContent = `${viewYear} 年 ${viewMonth} 月`;
+
+  const chipsEl = document.getElementById('filter-chips');
+  chipsEl.innerHTML = '';
+  selectedGroups.forEach(g => {
+    const c = groupColor(g);
+    const chip = document.createElement('div');
+    chip.className = 'filter-chip';
+    chip.style.background = c.bg; chip.style.color = c.fg;
+    chip.innerHTML = `${escHtml(g)}<span class="x">✕</span>`;
+    chip.querySelector('.x').addEventListener('click', () => { selectedGroups.delete(g); renderAll(); });
+    chipsEl.appendChild(chip);
+  });
+
+  const grid = document.getElementById('cal-grid');
+  grid.innerHTML = '';
+  DOW.forEach(d => {
+    const el = document.createElement('div');
+    el.className = 'cal-dow'; el.textContent = d;
+    grid.appendChild(el);
+  });
+
+  const first = new Date(viewYear, viewMonth-1, 1);
+  const startOffset = first.getDay();
+  const daysInMonth = new Date(viewYear, viewMonth, 0).getDate();
+  const prevDays = new Date(viewYear, viewMonth-1, 0).getDate();
+  const totalCells = Math.ceil((startOffset + daysInMonth) / 7) * 7;
+  const t = todayParts();
+
+  const byDate = {};
+  allData.forEach(d => {
+    if (!d.earnings_date) return;
+    if (selectedGroups.size && !selectedGroups.has(d.group)) return;
+    (byDate[d.earnings_date] = byDate[d.earnings_date] || []).push(d);
+  });
+
+  let filteredCount = 0;
+  Object.keys(byDate).forEach(k => {
+    const parts = k.split('-').map(Number);
+    if (parts[0] === viewYear && parts[1] === viewMonth) filteredCount += byDate[k].length;
+  });
+  document.getElementById('filter-count').textContent = `本月 ${filteredCount} 場`;
+
+  for (let i = 0; i < totalCells; i++) {
+    let dayNum, cellYear, cellMonth, otherMonth = false;
+    if (i < startOffset) {
+      dayNum = prevDays - startOffset + i + 1;
+      cellMonth = viewMonth - 1 || 12; cellYear = cellMonth === 12 ? viewYear - 1 : viewYear;
+      otherMonth = true;
+    } else if (i >= startOffset + daysInMonth) {
+      dayNum = i - startOffset - daysInMonth + 1;
+      cellMonth = viewMonth === 12 ? 1 : viewMonth + 1; cellYear = viewMonth === 12 ? viewYear + 1 : viewYear;
+      otherMonth = true;
+    } else {
+      dayNum = i - startOffset + 1; cellMonth = viewMonth; cellYear = viewYear;
+    }
+    const dateStr = `${cellYear}-${String(cellMonth).padStart(2,'0')}-${String(dayNum).padStart(2,'0')}`;
+    const cell = document.createElement('div');
+    cell.className = 'cal-day' + (otherMonth ? ' other-month' : '') + (dateStr === t.str ? ' today' : '');
+    const numEl = document.createElement('div');
+    numEl.className = 'day-num'; numEl.textContent = dayNum;
+    cell.appendChild(numEl);
+
+    const entries = byDate[dateStr] || [];
+    if (entries.length) {
+      const perGroup = {};
+      entries.forEach(e => { perGroup[e.group] = (perGroup[e.group]||0) + 1; });
+      const sorted = Object.entries(perGroup).sort((a,b) => b[1]-a[1]);
+      const shown = sorted.slice(0,2);
+      shown.forEach(([g,n]) => {
+        const c = groupColor(g);
+        const tag = document.createElement('div');
+        tag.className = 'day-tag';
+        tag.style.background = c.bg; tag.style.color = c.fg;
+        tag.textContent = `${g} ${n}`;
+        tag.addEventListener('click', () => openPanelFor(g, dateStr));
+        cell.appendChild(tag);
+      });
+      if (sorted.length > 2) {
+        const more = document.createElement('div');
+        more.className = 'day-more';
+        more.textContent = `＋${sorted.length-2}`;
+        cell.appendChild(more);
+      }
+    }
+    grid.appendChild(cell);
+  }
+}
+
+/* ---------- Layer 3 ---------- */
+function openPanelFor(group, dateStr) {
+  openPanel = { group, date: dateStr };
+  checkedCodes = new Set();
+  renderPanel3();
+}
+
+function renderPanel3() {
+  const box = document.getElementById('panel3');
+  if (!openPanel) {
+    box.innerHTML = `<div class="panel3-empty">點月曆上的族群標籤，或完成度格右上角的 📄 圖示，開始選擇要產出的報告。</div>`;
+    return;
+  }
+  const { group, date } = openPanel;
+  const c = groupColor(group);
+  const members = allData.filter(d => d.group === group).slice().sort((a,b) => {
+    const aHit = a.earnings_date === date, bHit = b.earnings_date === date;
+    if (aHit !== bHit) return aHit ? -1 : 1;
+    return (b.earnings_date||'').localeCompare(a.earnings_date||'');
+  });
+
+  box.innerHTML = `
+    <div class="panel3-head">
+      <span class="g-chip" style="background:${c.bg};color:${c.fg}">${escHtml(group)}</span>
+      <span class="date-txt">${date ? date : '無場次'}</span>
+      <span class="close-x" id="panel-close">✕</span>
+    </div>
+    <button class="output-btn-primary" id="btn-industry">產出產業報告</button>
+    <div class="stock-list" id="stock-list"></div>
+    <button class="output-btn-secondary" id="btn-stock" disabled>產出選取個股報告（0）</button>
+    <div class="cmd-box" id="cmd-box" style="display:none;">
+      <textarea id="cmd-text" readonly></textarea>
+      <button class="cmd-copy-btn" id="cmd-copy">複製指令</button>
+    </div>
+  `;
+
+  document.getElementById('panel-close').addEventListener('click', () => { openPanel = null; renderPanel3(); });
+
+  const listEl = document.getElementById('stock-list');
+  members.forEach(m => {
+    const row = document.createElement('div');
+    row.className = 'stock-row' + (m.earnings_date === date ? ' hit' : '');
+    const produced = producedMap[m.code];
+    let statusHtml;
+    if (produced) {
+      statusHtml = `<span class="s-status produced" data-code="${m.code}" title="點擊取消標記">已於 ${produced} 產出</span>`;
+    } else if (m.earnings_date && quarterOfDateStr(m.earnings_date) && quarterOfDateStr(m.earnings_date).y === qYear && quarterOfDateStr(m.earnings_date).q === qQ) {
+      statusHtml = `<span class="s-status">${m.earnings_date}</span>`;
+    } else if (m.earnings_date) {
+      statusHtml = `<span class="s-status">上次 ${m.earnings_date}</span>`;
+    } else {
+      statusHtml = `<span class="s-status">—</span>`;
+    }
+    row.innerHTML = `
+      <input type="checkbox" data-code="${m.code}" ${checkedCodes.has(m.code) ? 'checked' : ''}>
+      <span class="s-name">${escHtml(m.name)}${date && m.earnings_date === date ? ' <span class=\"s-hit-date\">'+m.earnings_date+'</span>' : ''}</span>
+      ${statusHtml}
+    `;
+    listEl.appendChild(row);
+    row.querySelector('input[type=checkbox]').addEventListener('change', (ev) => {
+      if (ev.target.checked) checkedCodes.add(m.code); else checkedCodes.delete(m.code);
+      updateStockBtn();
+    });
+    const prodEl = row.querySelector('.s-status.produced');
+    if (prodEl) prodEl.addEventListener('click', () => {
+      delete producedMap[m.code]; saveProduced(); renderPanel3();
+    });
+  });
+
+  updateStockBtn();
+
+  document.getElementById('btn-industry').addEventListener('click', () => generateCommand('industry', group, date, members));
+  document.getElementById('btn-stock').addEventListener('click', () => {
+    const chosen = members.filter(m => checkedCodes.has(m.code));
+    generateCommand('stock', group, date, chosen);
+  });
+}
+
+function updateStockBtn() {
+  const btn = document.getElementById('btn-stock');
+  if (!btn) return;
+  btn.textContent = `產出選取個股報告（${checkedCodes.size}）`;
+  btn.disabled = checkedCodes.size === 0;
+}
+
+function generateCommand(kind, group, date, members) {
+  const qLabel = `${qYear} Q${qQ} 財報季`;
+  let text;
+  if (kind === 'industry') {
+    const lines = members.map(m => `- ${m.name}（${m.code}／${m.market}）｜場次日期：${m.earnings_date || '無'}｜狀態：${m.status}`).join('\n');
+    text = `【產業分析報告】\n族群：${group}\n財報季：${qLabel}\n族群成分股（共 ${members.length} 家）：\n${lines}\n\n報告格式規格：${SPEC_INDUSTRY}\n請依規格搜尋族群內每家公司近期法說會內容，統整為產業分析報告。`;
+  } else {
+    const lines = members.map(m => `- ${m.name}｜代碼：${m.code}｜市場：${m.market}｜場次日期：${m.earnings_date || '無'}`).join('\n');
+    text = `【個股財報稽核卡】\n族群：${group}\n財報季：${qLabel}\n選取個股（共 ${members.length} 家）：\n${lines}\n\n報告格式規格：${SPEC_STOCK}\n請依規格為以上每支個股分別產出財報稽核卡。`;
+  }
+
+  document.getElementById('cmd-box').style.display = 'block';
+  document.getElementById('cmd-text').value = text;
+  const copyBtn = document.getElementById('cmd-copy');
+  copyBtn.classList.remove('copied');
+  copyBtn.textContent = '複製指令';
+  copyBtn.onclick = () => {
+    navigator.clipboard.writeText(text).then(() => {
+      copyBtn.classList.add('copied');
+      copyBtn.textContent = '已複製';
+    });
+  };
+
+  const today = todayParts().str;
+  members.forEach(m => { producedMap[m.code] = today; });
+  saveProduced();
+  checkedCodes = new Set();
+  renderPanel3();
+  document.getElementById('cmd-box').style.display = 'block';
+  document.getElementById('cmd-text').value = text;
+}
+
+/* ---------- Navigation ---------- */
+function shiftMonth(delta) {
+  viewMonth += delta;
+  if (viewMonth < 1) { viewMonth = 12; viewYear--; }
+  if (viewMonth > 12) { viewMonth = 1; viewYear++; }
+  renderCalendar();
+}
+function resetMonth() {
+  const t = todayParts(); viewYear = t.y; viewMonth = t.m;
+  renderCalendar();
+}
+function shiftQuarter(delta) {
+  qQ += delta;
+  if (qQ < 1) { qQ = 4; qYear--; }
+  if (qQ > 4) { qQ = 1; qYear++; }
+  renderCompletionBar();
+}
+function resetQuarter() {
+  const t = todayParts(); qYear = t.y; qQ = quarterOf(t.m);
+  renderCompletionBar();
+}
+
+function escHtml(s) {
+  return String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+}
+
+function init() {
+  const t = todayParts();
+  viewYear = t.y; viewMonth = t.m;
+  qYear = t.y; qQ = quarterOf(t.m);
+  loadProduced();
+  loadData();
+}
+init();
+</script>
+</body>
+</html>
