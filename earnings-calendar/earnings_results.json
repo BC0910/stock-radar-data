@@ -7,8 +7,8 @@
     "earnings_date": "2026-07-15",
     "status": "已結束",
     "source": "Finnhub",
-    "note": "Nasdaq正股掛牌，非ADR，可直接用Finnhub查詢",
-    "last_checked": "2026-08-06 20:30:00"
+    "note": null,
+    "last_checked": "2026-08-11 17:19:21"
   },
   {
     "name": "應用材料 Applied Materials",
@@ -19,7 +19,7 @@
     "status": "尚未召開(預告)",
     "source": "Finnhub",
     "note": null,
-    "last_checked": "2026-08-06 19:45:41"
+    "last_checked": "2026-08-11 17:19:21"
   },
   {
     "name": "科林研發 Lam Research",
@@ -30,7 +30,7 @@
     "status": "已結束",
     "source": "Finnhub",
     "note": null,
-    "last_checked": "2026-08-06 19:45:41"
+    "last_checked": "2026-08-11 17:19:21"
   },
   {
     "name": "科磊 KLA",
@@ -41,7 +41,7 @@
     "status": "已結束",
     "source": "Finnhub",
     "note": null,
-    "last_checked": "2026-08-06 19:45:41"
+    "last_checked": "2026-08-11 17:19:21"
   },
   {
     "name": "東京威力科創",
@@ -52,7 +52,7 @@
     "status": "已結束",
     "source": "TDnet鏡像(webapi.yanoshin.jp)決算短信",
     "note": null,
-    "last_checked": "2026-08-06 19:45:41"
+    "last_checked": "2026-08-11 17:19:21"
   },
   {
     "name": "京鼎",
@@ -63,7 +63,7 @@
     "status": "已結束",
     "source": "MOPS法人說明會查詢",
     "note": null,
-    "last_checked": "2026-08-06 19:45:41"
+    "last_checked": "2026-08-11 17:19:21"
   },
   {
     "name": "帆宣",
@@ -74,7 +74,7 @@
     "status": "已結束",
     "source": "MOPS法人說明會查詢",
     "note": null,
-    "last_checked": "2026-08-06 19:45:41"
+    "last_checked": "2026-08-11 17:19:21"
   },
   {
     "name": "翔名",
@@ -85,7 +85,7 @@
     "status": "已結束",
     "source": "MOPS法人說明會查詢",
     "note": null,
-    "last_checked": "2026-08-06 19:45:41"
+    "last_checked": "2026-08-11 17:19:21"
   },
   {
     "name": "公準",
@@ -96,7 +96,7 @@
     "status": "已結束",
     "source": "MOPS法人說明會查詢",
     "note": null,
-    "last_checked": "2026-08-06 19:45:41"
+    "last_checked": "2026-08-11 17:19:21"
   },
   {
     "name": "瑞耘",
@@ -107,7 +107,7 @@
     "status": "已結束",
     "source": "MOPS法人說明會查詢",
     "note": null,
-    "last_checked": "2026-08-06 19:45:41"
+    "last_checked": "2026-08-11 17:19:21"
   },
   {
     "name": "漢唐",
@@ -118,7 +118,7 @@
     "status": "已結束",
     "source": "MOPS法人說明會查詢",
     "note": null,
-    "last_checked": "2026-08-06 19:45:41"
+    "last_checked": "2026-08-11 17:19:21"
   },
   {
     "name": "聖暉",
@@ -129,7 +129,7 @@
     "status": "已結束",
     "source": "MOPS法人說明會查詢",
     "note": null,
-    "last_checked": "2026-08-06 19:45:41"
+    "last_checked": "2026-08-11 17:19:21"
   },
   {
     "name": "台積電",
@@ -140,7 +140,7 @@
     "status": "已結束",
     "source": "MOPS法人說明會查詢",
     "note": null,
-    "last_checked": "2026-08-06 19:45:41"
+    "last_checked": "2026-08-11 17:19:21"
   },
   {
     "name": "三星電子",
@@ -151,7 +151,7 @@
     "status": "已結束",
     "source": "Open DART公示搜尋(最近一次IR公告申報日，非確切開會日，需開公告內文確認)",
     "note": null,
-    "last_checked": "2026-08-06 19:45:41"
+    "last_checked": "2026-08-11 17:19:21"
   },
   {
     "name": "英特爾代工 Intel Foundry",
@@ -162,7 +162,7 @@
     "status": "已結束",
     "source": "Finnhub",
     "note": null,
-    "last_checked": "2026-08-06 19:45:41"
+    "last_checked": "2026-08-11 17:19:21"
   },
   {
     "name": "聯電",
@@ -173,7 +173,7 @@
     "status": "已結束",
     "source": "MOPS法人說明會查詢",
     "note": null,
-    "last_checked": "2026-08-06 19:45:41"
+    "last_checked": "2026-08-11 17:19:21"
   },
   {
     "name": "世界先進",
@@ -184,7 +184,7 @@
     "status": "已結束",
     "source": "MOPS法人說明會查詢",
     "note": null,
-    "last_checked": "2026-08-06 19:45:41"
+    "last_checked": "2026-08-11 17:19:21"
   },
   {
     "name": "力積電",
@@ -195,7 +195,7 @@
     "status": "已結束",
     "source": "MOPS法人說明會查詢",
     "note": null,
-    "last_checked": "2026-08-06 19:45:41"
+    "last_checked": "2026-08-11 17:19:21"
   },
   {
     "name": "格羅方德 GlobalFoundries",
@@ -206,7 +206,7 @@
     "status": "已結束",
     "source": "Finnhub",
     "note": null,
-    "last_checked": "2026-08-06 19:45:41"
+    "last_checked": "2026-08-11 17:19:21"
   },
   {
     "name": "中芯國際",
@@ -217,7 +217,7 @@
     "status": "已結束",
     "source": "CNINFO(最近一次業績說明會公告發布日，非確切開會日，需開公告內文確認)",
     "note": null,
-    "last_checked": "2026-08-06 19:45:41"
+    "last_checked": "2026-08-11 17:19:21"
   },
   {
     "name": "環球晶",
@@ -228,18 +228,18 @@
     "status": "已結束",
     "source": "MOPS法人說明會查詢",
     "note": null,
-    "last_checked": "2026-08-06 19:45:41"
+    "last_checked": "2026-08-11 17:19:21"
   },
   {
     "name": "中美晶",
     "code": "5483",
     "market": "台",
     "group": "矽晶圓材料",
-    "earnings_date": "2026-06-02",
+    "earnings_date": "2026-08-07",
     "status": "已結束",
     "source": "MOPS法人說明會查詢",
     "note": null,
-    "last_checked": "2026-08-06 19:45:41"
+    "last_checked": "2026-08-11 17:19:21"
   },
   {
     "name": "台勝科",
@@ -250,7 +250,7 @@
     "status": "已結束",
     "source": "MOPS法人說明會查詢",
     "note": null,
-    "last_checked": "2026-08-06 19:45:41"
+    "last_checked": "2026-08-11 17:19:21"
   },
   {
     "name": "信越化學",
@@ -261,7 +261,7 @@
     "status": "已結束",
     "source": "TDnet鏡像(webapi.yanoshin.jp)決算短信",
     "note": null,
-    "last_checked": "2026-08-06 19:45:41"
+    "last_checked": "2026-08-11 17:19:21"
   },
   {
     "name": "勝高 SUMCO",
@@ -272,29 +272,29 @@
     "status": "已結束",
     "source": "TDnet鏡像(webapi.yanoshin.jp)決算短信",
     "note": null,
-    "last_checked": "2026-08-06 19:45:41"
+    "last_checked": "2026-08-11 17:19:21"
   },
   {
     "name": "世創 Siltronic",
     "code": "WAF",
     "market": "歐",
     "group": "矽晶圓材料",
-    "earnings_date": "2026-07-30",
-    "status": "已結束",
-    "source": "人工查證(公司IR公告)",
-    "note": "Q2 2026 Quarterly Statement。下一場預告：2026/11/4 Q3 2026 Quarterly Statement，每季更新",
-    "last_checked": "2026-08-06 20:45:00"
+    "earnings_date": null,
+    "status": null,
+    "source": "人工",
+    "note": "歐股維持人工查詢，未呼叫任何API",
+    "last_checked": "2026-08-11 17:19:21"
   },
   {
     "name": "合晶",
     "code": "6182",
     "market": "台",
     "group": "矽晶圓材料",
-    "earnings_date": "2025-12-03",
+    "earnings_date": "2026-08-06",
     "status": "已結束",
     "source": "MOPS法人說明會查詢",
     "note": null,
-    "last_checked": "2026-08-06 19:45:41"
+    "last_checked": "2026-08-11 17:19:21"
   },
   {
     "name": "輝達 NVIDIA",
@@ -305,7 +305,7 @@
     "status": "尚未召開(預告)",
     "source": "Finnhub",
     "note": null,
-    "last_checked": "2026-08-06 19:45:41"
+    "last_checked": "2026-08-11 17:19:21"
   },
   {
     "name": "博通 Broadcom",
@@ -316,7 +316,7 @@
     "status": "尚未召開(預告)",
     "source": "Finnhub",
     "note": null,
-    "last_checked": "2026-08-06 19:45:41"
+    "last_checked": "2026-08-11 17:19:21"
   },
   {
     "name": "聯發科",
@@ -327,7 +327,7 @@
     "status": "已結束",
     "source": "MOPS法人說明會查詢",
     "note": null,
-    "last_checked": "2026-08-06 19:45:41"
+    "last_checked": "2026-08-11 17:19:21"
   },
   {
     "name": "世芯-KY",
@@ -338,7 +338,7 @@
     "status": "已結束",
     "source": "MOPS法人說明會查詢",
     "note": null,
-    "last_checked": "2026-08-06 19:45:41"
+    "last_checked": "2026-08-11 17:19:21"
   },
   {
     "name": "創意",
@@ -349,7 +349,7 @@
     "status": "已結束",
     "source": "MOPS法人說明會查詢",
     "note": null,
-    "last_checked": "2026-08-06 19:45:41"
+    "last_checked": "2026-08-11 17:19:21"
   },
   {
     "name": "邁威爾 Marvell",
@@ -360,7 +360,7 @@
     "status": "尚未召開(預告)",
     "source": "Finnhub",
     "note": null,
-    "last_checked": "2026-08-06 19:45:41"
+    "last_checked": "2026-08-11 17:19:21"
   },
   {
     "name": "高通 Qualcomm",
@@ -371,7 +371,7 @@
     "status": "已結束",
     "source": "Finnhub",
     "note": null,
-    "last_checked": "2026-08-06 19:45:41"
+    "last_checked": "2026-08-11 17:19:21"
   },
   {
     "name": "信驊",
@@ -382,7 +382,7 @@
     "status": "已結束",
     "source": "MOPS法人說明會查詢",
     "note": null,
-    "last_checked": "2026-08-06 19:45:41"
+    "last_checked": "2026-08-11 17:33:00"
   },
   {
     "name": "SK海力士",
@@ -393,7 +393,7 @@
     "status": "已結束",
     "source": "Open DART公示搜尋(最近一次IR公告申報日，非確切開會日，需開公告內文確認)",
     "note": null,
-    "last_checked": "2026-08-06 19:45:41"
+    "last_checked": "2026-08-11 17:19:21"
   },
   {
     "name": "美光 Micron",
@@ -404,7 +404,7 @@
     "status": "尚未召開(預告)",
     "source": "Finnhub",
     "note": null,
-    "last_checked": "2026-08-06 19:45:41"
+    "last_checked": "2026-08-11 17:19:21"
   },
   {
     "name": "旺宏",
@@ -415,18 +415,18 @@
     "status": "已結束",
     "source": "MOPS法人說明會查詢",
     "note": null,
-    "last_checked": "2026-08-06 19:45:41"
+    "last_checked": "2026-08-11 17:19:21"
   },
   {
     "name": "華邦電",
     "code": "2344",
     "market": "台",
     "group": "記憶體/NAND",
-    "earnings_date": "2026-05-05",
+    "earnings_date": "2026-08-06",
     "status": "已結束",
     "source": "MOPS法人說明會查詢",
     "note": null,
-    "last_checked": "2026-08-06 19:45:41"
+    "last_checked": "2026-08-11 17:19:21"
   },
   {
     "name": "南亞科",
@@ -437,7 +437,7 @@
     "status": "已結束",
     "source": "MOPS法人說明會查詢",
     "note": null,
-    "last_checked": "2026-08-06 19:45:41"
+    "last_checked": "2026-08-11 17:19:21"
   },
   {
     "name": "群聯",
@@ -448,18 +448,18 @@
     "status": "已結束",
     "source": "MOPS法人說明會查詢",
     "note": null,
-    "last_checked": "2026-08-06 19:45:41"
+    "last_checked": "2026-08-11 17:19:21"
   },
   {
     "name": "威剛",
     "code": "3260",
     "market": "台",
     "group": "記憶體/NAND",
-    "earnings_date": "2026-05-06",
+    "earnings_date": "2026-08-06",
     "status": "已結束",
     "source": "MOPS法人說明會查詢",
     "note": null,
-    "last_checked": "2026-08-06 19:45:41"
+    "last_checked": "2026-08-11 17:19:21"
   },
   {
     "name": "鎧俠 Kioxia",
@@ -469,8 +469,8 @@
     "earnings_date": "2026-07-31",
     "status": "已結束",
     "source": "TDnet鏡像(webapi.yanoshin.jp)決算短信",
-    "note": "原始地圖文件誤植為6600(查無此代碼)，2024年新上市採新式英數代碼，經TDnet核對更正為285A",
-    "last_checked": "2026-08-06 20:15:00"
+    "note": null,
+    "last_checked": "2026-08-11 17:19:21"
   },
   {
     "name": "威騰電子 WDC",
@@ -481,7 +481,7 @@
     "status": "已結束",
     "source": "Finnhub",
     "note": null,
-    "last_checked": "2026-08-06 19:45:41"
+    "last_checked": "2026-08-11 17:19:21"
   },
   {
     "name": "SanDisk",
@@ -492,7 +492,7 @@
     "status": "已結束",
     "source": "Finnhub",
     "note": null,
-    "last_checked": "2026-08-06 19:45:41"
+    "last_checked": "2026-08-11 17:19:21"
   },
   {
     "name": "Seagate",
@@ -503,7 +503,7 @@
     "status": "已結束",
     "source": "Finnhub",
     "note": null,
-    "last_checked": "2026-08-06 21:00:00"
+    "last_checked": "2026-08-11 17:19:21"
   },
   {
     "name": "力成",
@@ -514,7 +514,7 @@
     "status": "已結束",
     "source": "MOPS法人說明會查詢",
     "note": null,
-    "last_checked": "2026-08-06 19:45:41"
+    "last_checked": "2026-08-11 17:19:21"
   },
   {
     "name": "弘塑",
@@ -525,7 +525,7 @@
     "status": "已結束",
     "source": "MOPS法人說明會查詢",
     "note": null,
-    "last_checked": "2026-08-06 19:45:41"
+    "last_checked": "2026-08-11 17:19:21"
   },
   {
     "name": "萬潤",
@@ -536,7 +536,7 @@
     "status": "已結束",
     "source": "MOPS法人說明會查詢",
     "note": null,
-    "last_checked": "2026-08-06 19:45:41"
+    "last_checked": "2026-08-11 17:19:21"
   },
   {
     "name": "至上",
@@ -547,7 +547,7 @@
     "status": "已結束",
     "source": "MOPS法人說明會查詢",
     "note": null,
-    "last_checked": "2026-08-06 19:45:41"
+    "last_checked": "2026-08-11 17:19:21"
   },
   {
     "name": "愛德萬測試 Advantest",
@@ -558,7 +558,7 @@
     "status": "已結束",
     "source": "TDnet鏡像(webapi.yanoshin.jp)決算短信",
     "note": null,
-    "last_checked": "2026-08-06 19:45:41"
+    "last_checked": "2026-08-11 17:19:21"
   },
   {
     "name": "泰瑞達 Teradyne",
@@ -569,7 +569,7 @@
     "status": "已結束",
     "source": "Finnhub",
     "note": null,
-    "last_checked": "2026-08-06 19:45:41"
+    "last_checked": "2026-08-11 17:19:21"
   },
   {
     "name": "鴻勁",
@@ -580,7 +580,7 @@
     "status": "已結束",
     "source": "MOPS法人說明會查詢",
     "note": null,
-    "last_checked": "2026-08-06 19:45:41"
+    "last_checked": "2026-08-11 17:19:21"
   },
   {
     "name": "Cohu",
@@ -591,7 +591,7 @@
     "status": "已結束",
     "source": "Finnhub",
     "note": null,
-    "last_checked": "2026-08-06 19:45:41"
+    "last_checked": "2026-08-11 17:19:21"
   },
   {
     "name": "致茂電子",
@@ -602,7 +602,7 @@
     "status": "已結束",
     "source": "MOPS法人說明會查詢",
     "note": null,
-    "last_checked": "2026-08-06 19:45:41"
+    "last_checked": "2026-08-11 17:19:21"
   },
   {
     "name": "長川科技",
@@ -613,7 +613,7 @@
     "status": "已結束",
     "source": "CNINFO(最近一次業績說明會公告發布日，非確切開會日，需開公告內文確認)",
     "note": null,
-    "last_checked": "2026-08-06 19:45:41"
+    "last_checked": "2026-08-11 17:19:21"
   },
   {
     "name": "日月光投控",
@@ -624,7 +624,7 @@
     "status": "已結束",
     "source": "MOPS法人說明會查詢",
     "note": null,
-    "last_checked": "2026-08-06 19:45:41"
+    "last_checked": "2026-08-11 17:19:21"
   },
   {
     "name": "京元電",
@@ -635,7 +635,7 @@
     "status": "已結束",
     "source": "MOPS法人說明會查詢",
     "note": null,
-    "last_checked": "2026-08-06 19:45:41"
+    "last_checked": "2026-08-11 17:19:21"
   },
   {
     "name": "精測",
@@ -646,7 +646,7 @@
     "status": "已結束",
     "source": "MOPS法人說明會查詢",
     "note": null,
-    "last_checked": "2026-08-06 19:45:41"
+    "last_checked": "2026-08-11 17:19:21"
   },
   {
     "name": "穎崴",
@@ -657,7 +657,7 @@
     "status": "已結束",
     "source": "MOPS法人說明會查詢",
     "note": null,
-    "last_checked": "2026-08-06 19:45:41"
+    "last_checked": "2026-08-11 17:19:21"
   },
   {
     "name": "欣銓",
@@ -668,7 +668,7 @@
     "status": "已結束",
     "source": "MOPS法人說明會查詢",
     "note": null,
-    "last_checked": "2026-08-06 19:45:41"
+    "last_checked": "2026-08-11 17:19:21"
   },
   {
     "name": "長電科技",
@@ -679,7 +679,7 @@
     "status": "已結束",
     "source": "CNINFO(最近一次業績說明會公告發布日，非確切開會日，需開公告內文確認)",
     "note": null,
-    "last_checked": "2026-08-06 19:45:41"
+    "last_checked": "2026-08-11 17:33:00"
   },
   {
     "name": "欣興",
@@ -690,7 +690,7 @@
     "status": "已結束",
     "source": "MOPS法人說明會查詢",
     "note": null,
-    "last_checked": "2026-08-06 19:45:41"
+    "last_checked": "2026-08-11 17:19:21"
   },
   {
     "name": "南電",
@@ -701,7 +701,7 @@
     "status": "已結束",
     "source": "MOPS法人說明會查詢",
     "note": null,
-    "last_checked": "2026-08-06 19:45:41"
+    "last_checked": "2026-08-11 17:19:21"
   },
   {
     "name": "景碩",
@@ -712,7 +712,7 @@
     "status": "已結束",
     "source": "MOPS法人說明會查詢",
     "note": null,
-    "last_checked": "2026-08-06 19:45:41"
+    "last_checked": "2026-08-11 17:19:21"
   },
   {
     "name": "臻鼎-KY",
@@ -723,7 +723,7 @@
     "status": "已結束",
     "source": "MOPS法人說明會查詢",
     "note": null,
-    "last_checked": "2026-08-06 19:45:41"
+    "last_checked": "2026-08-11 17:19:21"
   },
   {
     "name": "揖斐電",
@@ -734,7 +734,7 @@
     "status": "已結束",
     "source": "TDnet鏡像(webapi.yanoshin.jp)決算短信",
     "note": null,
-    "last_checked": "2026-08-06 19:45:41"
+    "last_checked": "2026-08-11 17:19:21"
   },
   {
     "name": "新光電工",
@@ -745,18 +745,18 @@
     "status": "已結束",
     "source": "TDnet鏡像(webapi.yanoshin.jp)決算短信",
     "note": null,
-    "last_checked": "2026-08-06 19:45:41"
+    "last_checked": "2026-08-11 17:19:21"
   },
   {
     "name": "奧特斯 AT&S",
     "code": "ATS",
     "market": "歐",
     "group": "ABF載板",
-    "earnings_date": "2026-08-04",
-    "status": "已結束",
-    "source": "人工查證(公司IR公告)",
-    "note": "Q1 FY2026/27。下一場預告：2026/11/5 H1 FY2026/27，每季更新",
-    "last_checked": "2026-08-06 20:45:00"
+    "earnings_date": null,
+    "status": null,
+    "source": "人工",
+    "note": "歐股維持人工查詢，未呼叫任何API",
+    "last_checked": "2026-08-11 17:19:21"
   },
   {
     "name": "味之素",
@@ -767,7 +767,7 @@
     "status": "已結束",
     "source": "TDnet鏡像(webapi.yanoshin.jp)決算短信",
     "note": null,
-    "last_checked": "2026-08-06 19:45:41"
+    "last_checked": "2026-08-11 17:19:21"
   },
   {
     "name": "Resonac",
@@ -778,7 +778,7 @@
     "status": "已結束",
     "source": "TDnet鏡像(webapi.yanoshin.jp)決算短信",
     "note": null,
-    "last_checked": "2026-08-06 19:45:41"
+    "last_checked": "2026-08-11 17:19:21"
   },
   {
     "name": "金像電",
@@ -789,7 +789,7 @@
     "status": "已結束",
     "source": "MOPS法人說明會查詢",
     "note": null,
-    "last_checked": "2026-08-06 19:45:41"
+    "last_checked": "2026-08-11 17:19:21"
   },
   {
     "name": "健鼎",
@@ -800,7 +800,7 @@
     "status": "已結束",
     "source": "MOPS法人說明會查詢",
     "note": null,
-    "last_checked": "2026-08-06 19:45:41"
+    "last_checked": "2026-08-11 17:19:21"
   },
   {
     "name": "台光電",
@@ -811,7 +811,7 @@
     "status": "已結束",
     "source": "MOPS法人說明會查詢",
     "note": null,
-    "last_checked": "2026-08-06 19:45:41"
+    "last_checked": "2026-08-11 17:19:21"
   },
   {
     "name": "台燿",
@@ -822,7 +822,7 @@
     "status": "已結束",
     "source": "MOPS法人說明會查詢",
     "note": null,
-    "last_checked": "2026-08-06 19:45:41"
+    "last_checked": "2026-08-11 17:19:21"
   },
   {
     "name": "聯茂",
@@ -833,7 +833,7 @@
     "status": "已結束",
     "source": "MOPS法人說明會查詢",
     "note": null,
-    "last_checked": "2026-08-06 19:45:41"
+    "last_checked": "2026-08-11 17:19:21"
   },
   {
     "name": "南亞塑膠",
@@ -844,7 +844,7 @@
     "status": "已結束",
     "source": "MOPS法人說明會查詢",
     "note": null,
-    "last_checked": "2026-08-06 19:45:41"
+    "last_checked": "2026-08-11 17:19:21"
   },
   {
     "name": "金居",
@@ -855,7 +855,7 @@
     "status": "已結束",
     "source": "MOPS法人說明會查詢",
     "note": null,
-    "last_checked": "2026-08-06 19:45:41"
+    "last_checked": "2026-08-11 17:19:21"
   },
   {
     "name": "生益科技",
@@ -866,7 +866,7 @@
     "status": "已結束",
     "source": "CNINFO(最近一次業績說明會公告發布日，非確切開會日，需開公告內文確認)",
     "note": null,
-    "last_checked": "2026-08-06 19:45:41"
+    "last_checked": "2026-08-11 17:19:21"
   },
   {
     "name": "松下 Panasonic",
@@ -877,7 +877,7 @@
     "status": "已結束",
     "source": "TDnet鏡像(webapi.yanoshin.jp)決算短信",
     "note": null,
-    "last_checked": "2026-08-06 19:45:41"
+    "last_checked": "2026-08-11 17:19:21"
   },
   {
     "name": "羅傑斯 Rogers",
@@ -888,7 +888,7 @@
     "status": "已結束",
     "source": "Finnhub",
     "note": null,
-    "last_checked": "2026-08-06 19:45:41"
+    "last_checked": "2026-08-11 17:19:21"
   },
   {
     "name": "韓國斗山",
@@ -899,7 +899,7 @@
     "status": "已結束",
     "source": "Open DART公示搜尋(最近一次IR公告申報日，非確切開會日，需開公告內文確認)",
     "note": null,
-    "last_checked": "2026-08-06 19:45:41"
+    "last_checked": "2026-08-11 17:19:21"
   },
   {
     "name": "日東紡",
@@ -910,7 +910,7 @@
     "status": "已結束",
     "source": "TDnet鏡像(webapi.yanoshin.jp)決算短信",
     "note": null,
-    "last_checked": "2026-08-06 19:45:41"
+    "last_checked": "2026-08-11 17:19:21"
   },
   {
     "name": "中材科技",
@@ -921,7 +921,7 @@
     "status": "已結束",
     "source": "CNINFO(最近一次業績說明會公告發布日，非確切開會日，需開公告內文確認)",
     "note": null,
-    "last_checked": "2026-08-06 19:45:41"
+    "last_checked": "2026-08-11 17:33:00"
   },
   {
     "name": "建榮",
@@ -932,7 +932,7 @@
     "status": "已結束",
     "source": "MOPS法人說明會查詢",
     "note": null,
-    "last_checked": "2026-08-06 19:45:41"
+    "last_checked": "2026-08-11 17:19:21"
   },
   {
     "name": "富喬",
@@ -943,18 +943,18 @@
     "status": "已結束",
     "source": "MOPS法人說明會查詢",
     "note": null,
-    "last_checked": "2026-08-06 19:45:41"
+    "last_checked": "2026-08-11 17:19:21"
   },
   {
     "name": "國巨",
     "code": "2327",
     "market": "台",
     "group": "被動元件",
-    "earnings_date": "2026-07-29",
+    "earnings_date": "2026-08-07",
     "status": "已結束",
     "source": "MOPS法人說明會查詢",
     "note": null,
-    "last_checked": "2026-08-06 19:45:41"
+    "last_checked": "2026-08-11 17:19:21"
   },
   {
     "name": "村田製作所",
@@ -965,7 +965,7 @@
     "status": "已結束",
     "source": "TDnet鏡像(webapi.yanoshin.jp)決算短信",
     "note": null,
-    "last_checked": "2026-08-06 19:45:41"
+    "last_checked": "2026-08-11 17:19:21"
   },
   {
     "name": "三星電機",
@@ -976,7 +976,7 @@
     "status": "已結束",
     "source": "Open DART公示搜尋(最近一次IR公告申報日，非確切開會日，需開公告內文確認)",
     "note": null,
-    "last_checked": "2026-08-06 19:45:41"
+    "last_checked": "2026-08-11 17:19:21"
   },
   {
     "name": "TDK",
@@ -987,7 +987,7 @@
     "status": "已結束",
     "source": "TDnet鏡像(webapi.yanoshin.jp)決算短信",
     "note": null,
-    "last_checked": "2026-08-06 19:45:41"
+    "last_checked": "2026-08-11 17:19:21"
   },
   {
     "name": "太陽誘電",
@@ -998,7 +998,7 @@
     "status": "已結束",
     "source": "TDnet鏡像(webapi.yanoshin.jp)決算短信",
     "note": null,
-    "last_checked": "2026-08-06 19:45:41"
+    "last_checked": "2026-08-11 17:19:21"
   },
   {
     "name": "京瓷AVX",
@@ -1009,7 +1009,7 @@
     "status": "已結束",
     "source": "TDnet鏡像(webapi.yanoshin.jp)決算短信",
     "note": null,
-    "last_checked": "2026-08-06 19:45:41"
+    "last_checked": "2026-08-11 17:19:21"
   },
   {
     "name": "華新科",
@@ -1020,7 +1020,7 @@
     "status": "已結束",
     "source": "MOPS法人說明會查詢",
     "note": null,
-    "last_checked": "2026-08-06 19:45:41"
+    "last_checked": "2026-08-11 17:19:21"
   },
   {
     "name": "威世科技 Vishay",
@@ -1031,7 +1031,7 @@
     "status": "已結束",
     "source": "Finnhub",
     "note": null,
-    "last_checked": "2026-08-06 19:45:41"
+    "last_checked": "2026-08-11 17:19:21"
   },
   {
     "name": "意法半導體 STMicro",
@@ -1041,8 +1041,8 @@
     "earnings_date": "2026-07-23",
     "status": "已結束",
     "source": "Finnhub",
-    "note": "NYSE正股掛牌(代碼STM，非ST)，可直接用Finnhub查詢",
-    "last_checked": "2026-08-06 20:30:00"
+    "note": null,
+    "last_checked": "2026-08-11 17:19:21"
   },
   {
     "name": "Skyworks",
@@ -1053,18 +1053,18 @@
     "status": "已結束",
     "source": "Finnhub",
     "note": null,
-    "last_checked": "2026-08-06 19:45:41"
+    "last_checked": "2026-08-11 17:19:21"
   },
   {
     "name": "愛普科技",
     "code": "6531",
     "market": "台",
     "group": "被動元件",
-    "earnings_date": "2026-05-12",
+    "earnings_date": "2026-08-06",
     "status": "已結束",
     "source": "MOPS法人說明會查詢",
     "note": null,
-    "last_checked": "2026-08-06 19:45:41"
+    "last_checked": "2026-08-11 17:19:21"
   },
   {
     "name": "禾伸堂",
@@ -1075,7 +1075,7 @@
     "status": "已結束",
     "source": "MOPS法人說明會查詢",
     "note": null,
-    "last_checked": "2026-08-06 19:45:41"
+    "last_checked": "2026-08-11 17:19:21"
   },
   {
     "name": "立隆電",
@@ -1086,7 +1086,7 @@
     "status": "已結束",
     "source": "MOPS法人說明會查詢",
     "note": null,
-    "last_checked": "2026-08-06 19:45:41"
+    "last_checked": "2026-08-11 17:19:21"
   },
   {
     "name": "鈺邦",
@@ -1097,7 +1097,7 @@
     "status": "已結束",
     "source": "MOPS法人說明會查詢",
     "note": null,
-    "last_checked": "2026-08-06 19:45:41"
+    "last_checked": "2026-08-11 17:19:21"
   },
   {
     "name": "興勤",
@@ -1108,7 +1108,7 @@
     "status": "已結束",
     "source": "MOPS法人說明會查詢",
     "note": null,
-    "last_checked": "2026-08-06 19:45:41"
+    "last_checked": "2026-08-11 17:19:21"
   },
   {
     "name": "日電貿",
@@ -1119,18 +1119,18 @@
     "status": "已結束",
     "source": "MOPS法人說明會查詢",
     "note": null,
-    "last_checked": "2026-08-06 19:45:41"
+    "last_checked": "2026-08-11 17:19:21"
   },
   {
     "name": "大毅",
     "code": "2478",
     "market": "台",
     "group": "被動元件",
-    "earnings_date": "2025-11-06",
-    "status": "已結束",
+    "earnings_date": "2026-08-12",
+    "status": "尚未召開(預告)",
     "source": "MOPS法人說明會查詢",
     "note": null,
-    "last_checked": "2026-08-06 19:45:41"
+    "last_checked": "2026-08-11 17:19:21"
   },
   {
     "name": "光頡",
@@ -1141,7 +1141,7 @@
     "status": "已結束",
     "source": "MOPS法人說明會查詢",
     "note": null,
-    "last_checked": "2026-08-06 19:45:41"
+    "last_checked": "2026-08-11 17:19:21"
   },
   {
     "name": "信昌電",
@@ -1152,7 +1152,7 @@
     "status": "已結束",
     "source": "MOPS法人說明會查詢",
     "note": null,
-    "last_checked": "2026-08-06 19:45:41"
+    "last_checked": "2026-08-11 17:19:21"
   },
   {
     "name": "台達電",
@@ -1163,7 +1163,7 @@
     "status": "已結束",
     "source": "MOPS法人說明會查詢",
     "note": null,
-    "last_checked": "2026-08-06 19:45:41"
+    "last_checked": "2026-08-11 17:19:21"
   },
   {
     "name": "光寶科",
@@ -1174,7 +1174,7 @@
     "status": "已結束",
     "source": "MOPS法人說明會查詢",
     "note": null,
-    "last_checked": "2026-08-06 19:45:41"
+    "last_checked": "2026-08-11 17:19:21"
   },
   {
     "name": "Vertiv",
@@ -1185,7 +1185,7 @@
     "status": "已結束",
     "source": "Finnhub",
     "note": null,
-    "last_checked": "2026-08-06 19:45:41"
+    "last_checked": "2026-08-11 17:19:21"
   },
   {
     "name": "Vicor",
@@ -1196,18 +1196,18 @@
     "status": "已結束",
     "source": "Finnhub",
     "note": null,
-    "last_checked": "2026-08-06 19:45:41"
+    "last_checked": "2026-08-11 17:19:21"
   },
   {
     "name": "新電元工業",
     "code": "6844",
     "market": "日",
     "group": "電源",
-    "earnings_date": "2026-05-14",
+    "earnings_date": "2026-08-07",
     "status": "已結束",
     "source": "TDnet鏡像(webapi.yanoshin.jp)決算短信",
     "note": null,
-    "last_checked": "2026-08-06 19:45:41"
+    "last_checked": "2026-08-11 17:19:21"
   },
   {
     "name": "Cosel",
@@ -1218,7 +1218,7 @@
     "status": "已結束",
     "source": "TDnet鏡像(webapi.yanoshin.jp)決算短信",
     "note": null,
-    "last_checked": "2026-08-06 19:45:41"
+    "last_checked": "2026-08-11 17:19:21"
   },
   {
     "name": "施耐德電機 Schneider",
@@ -1228,8 +1228,8 @@
     "earnings_date": "2026-07-30",
     "status": "已結束",
     "source": "Finnhub",
-    "note": "美股OTC ADR(代碼SBGSY，非SU)，可直接用Finnhub查詢",
-    "last_checked": "2026-08-06 20:30:00"
+    "note": null,
+    "last_checked": "2026-08-11 17:19:21"
   },
   {
     "name": "奇鋐",
@@ -1240,7 +1240,7 @@
     "status": "已結束",
     "source": "MOPS法人說明會查詢",
     "note": null,
-    "last_checked": "2026-08-06 19:45:41"
+    "last_checked": "2026-08-11 17:19:21"
   },
   {
     "name": "雙鴻",
@@ -1251,7 +1251,7 @@
     "status": "已結束",
     "source": "MOPS法人說明會查詢",
     "note": null,
-    "last_checked": "2026-08-06 19:45:41"
+    "last_checked": "2026-08-11 17:19:21"
   },
   {
     "name": "健策",
@@ -1262,7 +1262,7 @@
     "status": "已結束",
     "source": "MOPS法人說明會查詢",
     "note": null,
-    "last_checked": "2026-08-06 19:45:41"
+    "last_checked": "2026-08-11 17:19:21"
   },
   {
     "name": "日本電產 Nidec",
@@ -1273,7 +1273,7 @@
     "status": "已結束",
     "source": "TDnet鏡像(webapi.yanoshin.jp)決算短信",
     "note": null,
-    "last_checked": "2026-08-06 19:45:41"
+    "last_checked": "2026-08-11 17:19:21"
   },
   {
     "name": "新唐科技 Nuvoton",
@@ -1284,7 +1284,7 @@
     "status": "已結束",
     "source": "MOPS法人說明會查詢",
     "note": null,
-    "last_checked": "2026-08-06 19:45:41"
+    "last_checked": "2026-08-11 17:19:21"
   },
   {
     "name": "Microchip",
@@ -1292,10 +1292,10 @@
     "market": "美",
     "group": "BMC",
     "earnings_date": "2026-08-06",
-    "status": "尚未召開(預告)",
+    "status": "已結束",
     "source": "Finnhub",
     "note": null,
-    "last_checked": "2026-08-06 19:45:41"
+    "last_checked": "2026-08-11 17:19:21"
   },
   {
     "name": "瑞薩電子 Renesas",
@@ -1306,7 +1306,7 @@
     "status": "已結束",
     "source": "TDnet鏡像(webapi.yanoshin.jp)決算短信",
     "note": null,
-    "last_checked": "2026-08-06 19:45:41"
+    "last_checked": "2026-08-11 17:19:21"
   },
   {
     "name": "AMI(2026/5起追蹤收購方Lattice Semiconductor)",
@@ -1317,7 +1317,7 @@
     "status": "已結束",
     "source": "Finnhub",
     "note": null,
-    "last_checked": "2026-08-06 19:45:41"
+    "last_checked": "2026-08-11 17:19:21"
   },
   {
     "name": "Dell",
@@ -1328,7 +1328,7 @@
     "status": "尚未召開(預告)",
     "source": "Finnhub",
     "note": null,
-    "last_checked": "2026-08-06 19:45:41"
+    "last_checked": "2026-08-11 17:19:21"
   },
   {
     "name": "HPE",
@@ -1339,7 +1339,7 @@
     "status": "尚未召開(預告)",
     "source": "Finnhub",
     "note": null,
-    "last_checked": "2026-08-06 19:45:41"
+    "last_checked": "2026-08-11 17:19:21"
   },
   {
     "name": "廣達",
@@ -1350,7 +1350,7 @@
     "status": "已結束",
     "source": "MOPS法人說明會查詢",
     "note": null,
-    "last_checked": "2026-08-06 19:45:41"
+    "last_checked": "2026-08-11 17:19:21"
   },
   {
     "name": "緯創",
@@ -1361,7 +1361,7 @@
     "status": "已結束",
     "source": "MOPS法人說明會查詢",
     "note": null,
-    "last_checked": "2026-08-06 19:45:41"
+    "last_checked": "2026-08-11 17:19:21"
   },
   {
     "name": "緯穎",
@@ -1372,7 +1372,7 @@
     "status": "已結束",
     "source": "MOPS法人說明會查詢",
     "note": null,
-    "last_checked": "2026-08-06 19:45:41"
+    "last_checked": "2026-08-11 17:19:21"
   },
   {
     "name": "鴻海",
@@ -1383,7 +1383,7 @@
     "status": "已結束",
     "source": "MOPS法人說明會查詢",
     "note": null,
-    "last_checked": "2026-08-06 19:45:41"
+    "last_checked": "2026-08-11 17:19:21"
   },
   {
     "name": "智邦",
@@ -1394,7 +1394,7 @@
     "status": "已結束",
     "source": "MOPS法人說明會查詢",
     "note": null,
-    "last_checked": "2026-08-06 19:45:41"
+    "last_checked": "2026-08-11 17:19:21"
   },
   {
     "name": "Arista Networks",
@@ -1405,29 +1405,29 @@
     "status": "已結束",
     "source": "Finnhub",
     "note": null,
-    "last_checked": "2026-08-06 19:45:41"
+    "last_checked": "2026-08-11 17:19:21"
   },
   {
     "name": "思科 Cisco",
     "code": "CSCO",
     "market": "美",
     "group": "網通/交換器",
-    "earnings_date": "2026-08-19",
+    "earnings_date": "2026-08-12",
     "status": "尚未召開(預告)",
     "source": "Finnhub",
     "note": null,
-    "last_checked": "2026-08-06 19:45:41"
+    "last_checked": "2026-08-11 17:19:21"
   },
   {
     "name": "川湖",
     "code": "2059",
     "market": "台",
     "group": "連接器/機構件",
-    "earnings_date": "2026-06-08",
+    "earnings_date": "2026-08-07",
     "status": "已結束",
     "source": "MOPS法人說明會查詢",
     "note": null,
-    "last_checked": "2026-08-06 19:45:41"
+    "last_checked": "2026-08-11 17:19:21"
   },
   {
     "name": "Amphenol",
@@ -1438,7 +1438,7 @@
     "status": "已結束",
     "source": "Finnhub",
     "note": null,
-    "last_checked": "2026-08-06 19:45:41"
+    "last_checked": "2026-08-11 17:19:21"
   },
   {
     "name": "TE Connectivity",
@@ -1449,7 +1449,7 @@
     "status": "已結束",
     "source": "Finnhub",
     "note": null,
-    "last_checked": "2026-08-06 19:45:41"
+    "last_checked": "2026-08-11 17:19:21"
   },
   {
     "name": "聯亞",
@@ -1460,7 +1460,7 @@
     "status": "已結束",
     "source": "MOPS法人說明會查詢",
     "note": null,
-    "last_checked": "2026-08-06 19:45:41"
+    "last_checked": "2026-08-11 17:19:21"
   },
   {
     "name": "上詮",
@@ -1471,7 +1471,7 @@
     "status": "已結束",
     "source": "MOPS法人說明會查詢",
     "note": null,
-    "last_checked": "2026-08-06 19:45:41"
+    "last_checked": "2026-08-11 17:19:21"
   },
   {
     "name": "全新",
@@ -1482,7 +1482,7 @@
     "status": "已結束",
     "source": "MOPS法人說明會查詢",
     "note": null,
-    "last_checked": "2026-08-06 19:45:41"
+    "last_checked": "2026-08-11 17:19:21"
   },
   {
     "name": "波若威",
@@ -1493,7 +1493,7 @@
     "status": "已結束",
     "source": "MOPS法人說明會查詢",
     "note": null,
-    "last_checked": "2026-08-06 19:45:41"
+    "last_checked": "2026-08-11 17:19:21"
   },
   {
     "name": "華星光",
@@ -1504,18 +1504,18 @@
     "status": "已結束",
     "source": "MOPS法人說明會查詢",
     "note": null,
-    "last_checked": "2026-08-06 19:45:41"
+    "last_checked": "2026-08-11 17:19:21"
   },
   {
     "name": "聯鈞",
     "code": "3450",
     "market": "台",
     "group": "光通訊/CPO",
-    "earnings_date": "2025-11-19",
-    "status": "已結束",
+    "earnings_date": "2026-08-18",
+    "status": "尚未召開(預告)",
     "source": "MOPS法人說明會查詢",
     "note": null,
-    "last_checked": "2026-08-06 19:45:41"
+    "last_checked": "2026-08-11 17:19:21"
   },
   {
     "name": "眾達-KY",
@@ -1526,7 +1526,7 @@
     "status": "已結束",
     "source": "MOPS法人說明會查詢",
     "note": null,
-    "last_checked": "2026-08-06 19:45:41"
+    "last_checked": "2026-08-11 17:19:21"
   },
   {
     "name": "訊芯-KY",
@@ -1537,7 +1537,7 @@
     "status": "已結束",
     "source": "MOPS法人說明會查詢",
     "note": null,
-    "last_checked": "2026-08-06 19:45:41"
+    "last_checked": "2026-08-11 17:19:21"
   },
   {
     "name": "大立光",
@@ -1548,7 +1548,7 @@
     "status": "已結束",
     "source": "MOPS法人說明會查詢",
     "note": null,
-    "last_checked": "2026-08-06 19:45:41"
+    "last_checked": "2026-08-11 17:19:21"
   },
   {
     "name": "旺矽",
@@ -1559,7 +1559,7 @@
     "status": "已結束",
     "source": "MOPS法人說明會查詢",
     "note": null,
-    "last_checked": "2026-08-06 19:45:41"
+    "last_checked": "2026-08-11 17:19:21"
   },
   {
     "name": "光聖",
@@ -1570,7 +1570,7 @@
     "status": "已結束",
     "source": "MOPS法人說明會查詢",
     "note": null,
-    "last_checked": "2026-08-06 19:45:41"
+    "last_checked": "2026-08-11 17:19:21"
   },
   {
     "name": "Lumentum",
@@ -1581,7 +1581,7 @@
     "status": "尚未召開(預告)",
     "source": "Finnhub",
     "note": null,
-    "last_checked": "2026-08-06 19:45:41"
+    "last_checked": "2026-08-11 17:19:21"
   },
   {
     "name": "Coherent",
@@ -1592,7 +1592,7 @@
     "status": "尚未召開(預告)",
     "source": "Finnhub",
     "note": null,
-    "last_checked": "2026-08-06 19:45:41"
+    "last_checked": "2026-08-11 17:19:21"
   },
   {
     "name": "中際旭創",
@@ -1603,7 +1603,7 @@
     "status": "已結束",
     "source": "CNINFO(最近一次業績說明會公告發布日，非確切開會日，需開公告內文確認)",
     "note": null,
-    "last_checked": "2026-08-06 19:45:41"
+    "last_checked": "2026-08-11 17:19:21"
   },
   {
     "name": "新易盛",
@@ -1614,7 +1614,7 @@
     "status": "已結束",
     "source": "CNINFO(最近一次業績說明會公告發布日，非確切開會日，需開公告內文確認)",
     "note": null,
-    "last_checked": "2026-08-06 19:45:41"
+    "last_checked": "2026-08-11 17:19:21"
   },
   {
     "name": "Nokia",
@@ -1624,8 +1624,8 @@
     "earnings_date": "2026-07-23",
     "status": "已結束",
     "source": "Finnhub",
-    "note": "NYSE ADR(代碼NOK，非NOKIA)，可直接用Finnhub查詢",
-    "last_checked": "2026-08-06 20:30:00"
+    "note": null,
+    "last_checked": "2026-08-11 17:19:21"
   },
   {
     "name": "Fabrinet",
@@ -1636,7 +1636,7 @@
     "status": "尚未召開(預告)",
     "source": "Finnhub",
     "note": null,
-    "last_checked": "2026-08-06 19:45:41"
+    "last_checked": "2026-08-11 17:19:21"
   },
   {
     "name": "Applied Optoelectronics",
@@ -1647,7 +1647,7 @@
     "status": "已結束",
     "source": "Finnhub",
     "note": null,
-    "last_checked": "2026-08-08 05:20:00"
+    "last_checked": "2026-08-11 17:19:21"
   },
   {
     "name": "蘋果 Apple",
@@ -1658,7 +1658,7 @@
     "status": "已結束",
     "source": "Finnhub",
     "note": null,
-    "last_checked": "2026-08-06 19:45:41"
+    "last_checked": "2026-08-11 17:19:21"
   },
   {
     "name": "微軟 Microsoft",
@@ -1669,7 +1669,7 @@
     "status": "已結束",
     "source": "Finnhub",
     "note": null,
-    "last_checked": "2026-08-06 19:45:41"
+    "last_checked": "2026-08-11 17:19:21"
   },
   {
     "name": "Alphabet",
@@ -1680,7 +1680,7 @@
     "status": "已結束",
     "source": "Finnhub",
     "note": null,
-    "last_checked": "2026-08-06 19:45:41"
+    "last_checked": "2026-08-11 17:19:21"
   },
   {
     "name": "亞馬遜 Amazon",
@@ -1691,7 +1691,7 @@
     "status": "已結束",
     "source": "Finnhub",
     "note": null,
-    "last_checked": "2026-08-06 19:45:41"
+    "last_checked": "2026-08-11 17:19:21"
   },
   {
     "name": "Meta",
@@ -1702,7 +1702,7 @@
     "status": "已結束",
     "source": "Finnhub",
     "note": null,
-    "last_checked": "2026-08-06 19:45:41"
+    "last_checked": "2026-08-11 17:19:21"
   },
   {
     "name": "特斯拉 Tesla",
@@ -1713,7 +1713,7 @@
     "status": "已結束",
     "source": "Finnhub",
     "note": null,
-    "last_checked": "2026-08-06 19:45:41"
+    "last_checked": "2026-08-11 17:19:21"
   },
   {
     "name": "甲骨文 Oracle",
@@ -1724,18 +1724,7 @@
     "status": "尚未召開(預告)",
     "source": "Finnhub",
     "note": null,
-    "last_checked": "2026-08-06 19:45:41"
-  },
-  {
-    "name": "CoreWeave",
-    "code": "CRWV",
-    "market": "美",
-    "group": "AI應用軟體",
-    "earnings_date": "2026-08-11",
-    "status": "尚未召開(預告)",
-    "source": "Finnhub",
-    "note": null,
-    "last_checked": "2026-08-08 05:25:00"
+    "last_checked": "2026-08-11 17:19:21"
   },
   {
     "name": "Palantir",
@@ -1746,7 +1735,18 @@
     "status": "已結束",
     "source": "Finnhub",
     "note": null,
-    "last_checked": "2026-08-06 19:45:41"
+    "last_checked": "2026-08-11 17:19:21"
+  },
+  {
+    "name": "CoreWeave",
+    "code": "CRWV",
+    "market": "美",
+    "group": "AI應用軟體",
+    "earnings_date": "2026-08-11",
+    "status": "尚未召開(預告)",
+    "source": "Finnhub",
+    "note": null,
+    "last_checked": "2026-08-11 17:19:21"
   },
   {
     "name": "ServiceNow",
@@ -1757,7 +1757,7 @@
     "status": "已結束",
     "source": "Finnhub",
     "note": null,
-    "last_checked": "2026-08-06 19:45:41"
+    "last_checked": "2026-08-11 17:19:21"
   },
   {
     "name": "Salesforce",
@@ -1768,7 +1768,7 @@
     "status": "尚未召開(預告)",
     "source": "Finnhub",
     "note": null,
-    "last_checked": "2026-08-06 19:45:41"
+    "last_checked": "2026-08-11 17:19:21"
   },
   {
     "name": "Snowflake",
@@ -1779,7 +1779,7 @@
     "status": "尚未召開(預告)",
     "source": "Finnhub",
     "note": null,
-    "last_checked": "2026-08-06 19:45:41"
+    "last_checked": "2026-08-11 17:19:21"
   },
   {
     "name": "精誠 SYSTEX",
@@ -1790,7 +1790,7 @@
     "status": "已結束",
     "source": "MOPS法人說明會查詢",
     "note": null,
-    "last_checked": "2026-08-06 19:45:41"
+    "last_checked": "2026-08-11 17:19:21"
   },
   {
     "name": "伊雲谷",
@@ -1801,7 +1801,7 @@
     "status": "已結束",
     "source": "MOPS法人說明會查詢",
     "note": null,
-    "last_checked": "2026-08-06 19:45:41"
+    "last_checked": "2026-08-11 17:19:21"
   },
   {
     "name": "CrowdStrike",
@@ -1812,7 +1812,7 @@
     "status": "尚未召開(預告)",
     "source": "Finnhub",
     "note": null,
-    "last_checked": "2026-08-06 19:45:41"
+    "last_checked": "2026-08-11 17:19:21"
   },
   {
     "name": "Palo Alto Networks",
@@ -1823,7 +1823,7 @@
     "status": "尚未召開(預告)",
     "source": "Finnhub",
     "note": null,
-    "last_checked": "2026-08-06 19:45:41"
+    "last_checked": "2026-08-11 17:19:21"
   },
   {
     "name": "Fortinet",
@@ -1834,18 +1834,18 @@
     "status": "已結束",
     "source": "Finnhub",
     "note": null,
-    "last_checked": "2026-08-06 19:45:41"
+    "last_checked": "2026-08-11 17:19:21"
   },
   {
     "name": "Zscaler",
     "code": "ZS",
     "market": "美",
     "group": "資安",
-    "earnings_date": "2026-08-31",
+    "earnings_date": "2026-09-03",
     "status": "尚未召開(預告)",
     "source": "Finnhub",
     "note": null,
-    "last_checked": "2026-08-06 19:45:41"
+    "last_checked": "2026-08-11 17:19:21"
   },
   {
     "name": "Cloudflare",
@@ -1853,10 +1853,10 @@
     "market": "美",
     "group": "資安",
     "earnings_date": "2026-08-06",
-    "status": "尚未召開(預告)",
+    "status": "已結束",
     "source": "Finnhub",
     "note": null,
-    "last_checked": "2026-08-06 19:45:41"
+    "last_checked": "2026-08-11 17:19:21"
   },
   {
     "name": "Check Point",
@@ -1867,7 +1867,7 @@
     "status": "已結束",
     "source": "Finnhub",
     "note": null,
-    "last_checked": "2026-08-06 19:45:41"
+    "last_checked": "2026-08-11 17:19:21"
   },
   {
     "name": "立端",
@@ -1878,7 +1878,7 @@
     "status": "已結束",
     "source": "MOPS法人說明會查詢",
     "note": null,
-    "last_checked": "2026-08-06 19:45:41"
+    "last_checked": "2026-08-11 17:19:21"
   },
   {
     "name": "中華資安國際",
@@ -1889,7 +1889,7 @@
     "status": "已結束",
     "source": "MOPS法人說明會查詢",
     "note": null,
-    "last_checked": "2026-08-06 19:45:41"
+    "last_checked": "2026-08-11 17:19:21"
   },
   {
     "name": "高力",
@@ -1900,7 +1900,7 @@
     "status": "已結束",
     "source": "MOPS法人說明會查詢",
     "note": null,
-    "last_checked": "2026-08-06 19:45:41"
+    "last_checked": "2026-08-11 17:19:21"
   },
   {
     "name": "康舒",
@@ -1911,7 +1911,7 @@
     "status": "已結束",
     "source": "MOPS法人說明會查詢",
     "note": null,
-    "last_checked": "2026-08-06 19:45:41"
+    "last_checked": "2026-08-11 17:19:21"
   },
   {
     "name": "金寶",
@@ -1922,7 +1922,7 @@
     "status": "已結束",
     "source": "MOPS法人說明會查詢",
     "note": null,
-    "last_checked": "2026-08-06 19:45:41"
+    "last_checked": "2026-08-11 17:19:21"
   },
   {
     "name": "SMC",
@@ -1933,7 +1933,7 @@
     "status": "已結束",
     "source": "TDnet鏡像(webapi.yanoshin.jp)決算短信",
     "note": null,
-    "last_checked": "2026-08-06 19:45:41"
+    "last_checked": "2026-08-11 17:19:21"
   },
   {
     "name": "亞德客-KY",
@@ -1944,7 +1944,7 @@
     "status": "已結束",
     "source": "MOPS法人說明會查詢",
     "note": null,
-    "last_checked": "2026-08-06 19:45:41"
+    "last_checked": "2026-08-11 17:19:21"
   },
   {
     "name": "Parker Hannifin",
@@ -1952,21 +1952,21 @@
     "market": "美",
     "group": "氣動元件",
     "earnings_date": "2026-08-06",
-    "status": "尚未召開(預告)",
+    "status": "已結束",
     "source": "Finnhub",
     "note": null,
-    "last_checked": "2026-08-06 19:45:41"
+    "last_checked": "2026-08-11 17:19:21"
   },
   {
     "name": "CKD",
     "code": "6407",
     "market": "日",
     "group": "氣動元件",
-    "earnings_date": "2026-05-15",
+    "earnings_date": "2026-08-10",
     "status": "已結束",
     "source": "TDnet鏡像(webapi.yanoshin.jp)決算短信",
     "note": null,
-    "last_checked": "2026-08-06 19:45:41"
+    "last_checked": "2026-08-11 17:19:21"
   },
   {
     "name": "Emerson/ASCO",
@@ -1977,18 +1977,18 @@
     "status": "已結束",
     "source": "Finnhub",
     "note": null,
-    "last_checked": "2026-08-06 19:45:41"
+    "last_checked": "2026-08-11 17:19:21"
   },
   {
     "name": "IMI/Norgren",
     "code": "IMI",
     "market": "歐",
     "group": "氣動元件",
-    "earnings_date": "2026-07-31",
-    "status": "已結束",
-    "source": "人工查證(公司IR公告)",
-    "note": "Half Year Results 2026。全年財報預計2027/3左右，非每季完整法說(Q1/Q3為Trading Update)",
-    "last_checked": "2026-08-06 20:45:00"
+    "earnings_date": null,
+    "status": null,
+    "source": "人工",
+    "note": "歐股維持人工查詢，未呼叫任何API",
+    "last_checked": "2026-08-11 17:19:21"
   },
   {
     "name": "恒立液壓",
@@ -1999,7 +1999,7 @@
     "status": "已結束",
     "source": "CNINFO(最近一次業績說明會公告發布日，非確切開會日，需開公告內文確認)",
     "note": null,
-    "last_checked": "2026-08-06 19:45:41"
+    "last_checked": "2026-08-11 17:19:21"
   },
   {
     "name": "大聯大 WPG",
@@ -2010,7 +2010,7 @@
     "status": "已結束",
     "source": "MOPS法人說明會查詢",
     "note": null,
-    "last_checked": "2026-08-06 19:45:41"
+    "last_checked": "2026-08-11 17:19:21"
   },
   {
     "name": "艾睿電子 Arrow",
@@ -2018,10 +2018,10 @@
     "market": "美",
     "group": "電子通路商",
     "earnings_date": "2026-08-06",
-    "status": "尚未召開(預告)",
+    "status": "已結束",
     "source": "Finnhub",
     "note": null,
-    "last_checked": "2026-08-06 19:45:41"
+    "last_checked": "2026-08-11 17:19:21"
   },
   {
     "name": "安富利 Avnet",
@@ -2032,18 +2032,18 @@
     "status": "已結束",
     "source": "Finnhub",
     "note": null,
-    "last_checked": "2026-08-06 19:45:41"
+    "last_checked": "2026-08-11 17:19:21"
   },
   {
     "name": "文曄 WT",
     "code": "3036",
     "market": "台",
     "group": "電子通路商",
-    "earnings_date": "2026-06-10",
+    "earnings_date": "2026-08-06",
     "status": "已結束",
     "source": "MOPS法人說明會查詢",
     "note": null,
-    "last_checked": "2026-08-06 19:45:41"
+    "last_checked": "2026-08-11 17:19:21"
   },
   {
     "name": "SpaceX",
@@ -2054,7 +2054,7 @@
     "status": "已結束",
     "source": "Finnhub",
     "note": null,
-    "last_checked": "2026-08-06 19:45:41"
+    "last_checked": "2026-08-11 17:19:21"
   },
   {
     "name": "昇達科",
@@ -2065,7 +2065,7 @@
     "status": "已結束",
     "source": "MOPS法人說明會查詢",
     "note": null,
-    "last_checked": "2026-08-06 19:45:41"
+    "last_checked": "2026-08-11 17:19:21"
   },
   {
     "name": "華通",
@@ -2076,7 +2076,7 @@
     "status": "已結束",
     "source": "MOPS法人說明會查詢",
     "note": null,
-    "last_checked": "2026-08-06 19:45:41"
+    "last_checked": "2026-08-11 17:19:21"
   },
   {
     "name": "啟碁",
@@ -2087,7 +2087,7 @@
     "status": "已結束",
     "source": "MOPS法人說明會查詢",
     "note": null,
-    "last_checked": "2026-08-06 19:45:41"
+    "last_checked": "2026-08-11 17:19:21"
   },
   {
     "name": "同欣電",
@@ -2098,18 +2098,18 @@
     "status": "已結束",
     "source": "MOPS法人說明會查詢",
     "note": null,
-    "last_checked": "2026-08-06 19:45:41"
+    "last_checked": "2026-08-11 17:19:21"
   },
   {
     "name": "Filtronic",
     "code": "FTC",
     "market": "歐",
     "group": "低軌衛星",
-    "earnings_date": "2026-08-04",
-    "status": "已結束",
-    "source": "人工查證(公司IR公告)",
-    "note": "FY2026 Half Year Report。AIM公司通常無季報，僅半年報+年報",
-    "last_checked": "2026-08-06 20:45:00"
+    "earnings_date": null,
+    "status": null,
+    "source": "人工",
+    "note": "歐股維持人工查詢，未呼叫任何API",
+    "last_checked": "2026-08-11 17:19:21"
   },
   {
     "name": "Airbus",
@@ -2119,8 +2119,8 @@
     "earnings_date": "2026-07-29",
     "status": "已結束",
     "source": "Finnhub",
-    "note": "美股OTC ADR(代碼EADSY，非AIR)，可直接用Finnhub查詢",
-    "last_checked": "2026-08-06 20:30:00"
+    "note": null,
+    "last_checked": "2026-08-11 17:19:21"
   },
   {
     "name": "AST SpaceMobile",
@@ -2128,21 +2128,21 @@
     "market": "美",
     "group": "低軌衛星",
     "earnings_date": "2026-08-10",
-    "status": "尚未召開(預告)",
+    "status": "已結束",
     "source": "Finnhub",
     "note": null,
-    "last_checked": "2026-08-06 19:45:41"
+    "last_checked": "2026-08-11 17:19:21"
   },
   {
     "name": "Eutelsat",
     "code": "ETL",
     "market": "歐",
     "group": "低軌衛星",
-    "earnings_date": "2026-08-07",
-    "status": "尚未召開(預告)",
-    "source": "人工查證(公司IR公告)",
-    "note": "2025/26全年財報，明日即將公布(尚未結束)。另有季度營收更新+半年報",
-    "last_checked": "2026-08-06 20:45:00"
+    "earnings_date": null,
+    "status": null,
+    "source": "人工",
+    "note": "歐股維持人工查詢，未呼叫任何API",
+    "last_checked": "2026-08-11 17:19:21"
   },
   {
     "name": "SoftBank",
@@ -2153,7 +2153,7 @@
     "status": "已結束",
     "source": "TDnet鏡像(webapi.yanoshin.jp)決算短信",
     "note": null,
-    "last_checked": "2026-08-06 19:45:41"
+    "last_checked": "2026-08-11 17:19:21"
   },
   {
     "name": "Mitsubishi Electric",
@@ -2164,6 +2164,6 @@
     "status": "已結束",
     "source": "TDnet鏡像(webapi.yanoshin.jp)決算短信",
     "note": null,
-    "last_checked": "2026-08-06 19:45:41"
+    "last_checked": "2026-08-11 17:19:21"
   }
 ]
