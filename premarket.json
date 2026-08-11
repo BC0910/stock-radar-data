@@ -1,5 +1,5 @@
 {
-  "date": "2026-08-10",
+  "date": "2026-08-11",
   "indicators": {
     "tpex_weekly_macd": {
       "status": "ok",
@@ -12,14 +12,14 @@
     "tpex_daily_macd": {
       "status": "ok",
       "state": "紅柱增長",
-      "days_in_state": 4,
-      "histogram_today": 4.603128405206295,
-      "histogram_prev": 3.66756922399067,
-      "confirmed_days_available": 229
+      "days_in_state": 5,
+      "histogram_today": 5.0732439852903575,
+      "histogram_prev": 4.603128405206295,
+      "confirmed_days_available": 230
     },
     "taiex_monthly_ma": {
       "status": "ok",
-      "direction": "下彎"
+      "direction": "上彎"
     },
     "tpex_monthly_ma": {
       "status": "ok",
@@ -36,9 +36,17 @@
       "is_new_entry_top20": false
     },
     {
+      "code": "2327",
+      "name": "國巨*",
+      "rank": 2,
+      "group_custom": "被動元件",
+      "group_official": "電子零組件業",
+      "is_new_entry_top20": false
+    },
+    {
       "code": "2330",
       "name": "台積電",
-      "rank": 2,
+      "rank": 3,
       "group_custom": "晶圓代工",
       "group_official": "半導體業",
       "is_new_entry_top20": false
@@ -46,74 +54,66 @@
     {
       "code": "2344",
       "name": "華邦電",
-      "rank": 3,
+      "rank": 4,
       "group_custom": "記憶體",
       "group_official": "半導體業",
-      "is_new_entry_top20": false
-    },
-    {
-      "code": "2454",
-      "name": "聯發科",
-      "rank": 4,
-      "group_custom": "IC/IP設計",
-      "group_official": "半導體業",
-      "is_new_entry_top20": false
-    },
-    {
-      "code": "2303",
-      "name": "聯電",
-      "rank": 5,
-      "group_custom": "晶圓代工",
-      "group_official": "半導體業",
-      "is_new_entry_top20": false
-    },
-    {
-      "code": "2327",
-      "name": "國巨*",
-      "rank": 6,
-      "group_custom": "被動元件",
-      "group_official": "電子零組件業",
-      "is_new_entry_top20": false
-    },
-    {
-      "code": "1303",
-      "name": "南亞",
-      "rank": 7,
-      "group_custom": null,
-      "group_official": "塑膠工業",
       "is_new_entry_top20": false
     },
     {
       "code": "2308",
       "name": "台達電",
-      "rank": 8,
+      "rank": 5,
       "group_custom": "電源管理",
       "group_official": "電子零組件業",
       "is_new_entry_top20": false
     },
     {
-      "code": "3711",
-      "name": "日月光投控",
-      "rank": 9,
-      "group_custom": "封測",
+      "code": "2454",
+      "name": "聯發科",
+      "rank": 6,
+      "group_custom": "IC/IP設計",
       "group_official": "半導體業",
-      "is_new_entry_top20": true
+      "is_new_entry_top20": false
     },
     {
       "code": "2337",
       "name": "旺宏",
-      "rank": 10,
+      "rank": 7,
       "group_custom": "記憶體",
       "group_official": "半導體業",
       "is_new_entry_top20": false
     },
     {
-      "code": "2368",
-      "name": "金像電",
-      "rank": 11,
-      "group_custom": "PCB",
-      "group_official": "電子零組件業",
+      "code": "3661",
+      "name": "世芯-KY",
+      "rank": 8,
+      "group_custom": "IC/IP設計",
+      "group_official": "半導體業",
       "is_new_entry_top20": false
+    },
+    {
+      "code": "1303",
+      "name": "南亞",
+      "rank": 9,
+      "group_custom": null,
+      "group_official": "塑膠工業",
+      "is_new_entry_top20": false
+    },
+    {
+      "code": "3481",
+      "name": "群創",
+      "rank": 10,
+      "group_custom": "面板",
+      "group_official": "光電業",
+      "is_new_entry_top20": false
+    },
+    {
+      "code": "3443",
+      "name": "創意",
+      "rank": 11,
+      "group_custom": "IC/IP設計",
+      "group_official": "半導體業",
+      "is_new_entry_top20": true
     },
     {
       "code": "4958",
@@ -124,67 +124,67 @@
       "is_new_entry_top20": false
     },
     {
-      "code": "6770",
-      "name": "力積電",
+      "code": "2492",
+      "name": "華新科",
       "rank": 13,
-      "group_custom": "晶圓代工",
-      "group_official": "半導體業",
-      "is_new_entry_top20": false
-    },
-    {
-      "code": "3231",
-      "name": "緯創",
-      "rank": 14,
-      "group_custom": "伺服器ODM",
-      "group_official": "電腦及週邊設備業",
-      "is_new_entry_top20": true
-    },
-    {
-      "code": "8358",
-      "name": "金居",
-      "rank": 15,
-      "group_custom": "PCB",
-      "group_official": "電子零組件業",
-      "is_new_entry_top20": true
-    },
-    {
-      "code": "3661",
-      "name": "世芯-KY",
-      "rank": 16,
-      "group_custom": "IC/IP設計",
-      "group_official": "半導體業",
-      "is_new_entry_top20": true
-    },
-    {
-      "code": "2059",
-      "name": "川湖",
-      "rank": 17,
-      "group_custom": "電子零組件",
-      "group_official": "電子零組件業",
-      "is_new_entry_top20": true
-    },
-    {
-      "code": "3481",
-      "name": "群創",
-      "rank": 18,
-      "group_custom": "面板",
-      "group_official": "光電業",
-      "is_new_entry_top20": false
-    },
-    {
-      "code": "8039",
-      "name": "台虹",
-      "rank": 19,
-      "group_custom": "PCB",
+      "group_custom": "被動元件",
       "group_official": "電子零組件業",
       "is_new_entry_top20": true
     },
     {
       "code": "2383",
       "name": "台光電",
-      "rank": 20,
+      "rank": 14,
       "group_custom": "CCL",
       "group_official": "電子零組件業",
+      "is_new_entry_top20": false
+    },
+    {
+      "code": "3026",
+      "name": "禾伸堂",
+      "rank": 15,
+      "group_custom": "被動元件",
+      "group_official": "電子零組件業",
+      "is_new_entry_top20": true
+    },
+    {
+      "code": "2301",
+      "name": "光寶科",
+      "rank": 16,
+      "group_custom": "電源管理",
+      "group_official": "電腦及週邊設備業",
+      "is_new_entry_top20": true
+    },
+    {
+      "code": "2368",
+      "name": "金像電",
+      "rank": 17,
+      "group_custom": "PCB",
+      "group_official": "電子零組件業",
+      "is_new_entry_top20": false
+    },
+    {
+      "code": "2409",
+      "name": "友達",
+      "rank": 18,
+      "group_custom": "面板",
+      "group_official": "光電業",
+      "is_new_entry_top20": true
+    },
+    {
+      "code": "3711",
+      "name": "日月光投控",
+      "rank": 19,
+      "group_custom": "封測",
+      "group_official": "半導體業",
+      "is_new_entry_top20": false
+    },
+    {
+      "code": "6239",
+      "name": "力成",
+      "rank": 20,
+      "group_custom": "封測",
+      "group_official": "半導體業",
       "is_new_entry_top20": true
     }
   ]
