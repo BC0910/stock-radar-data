@@ -191,9 +191,9 @@ body {
 .day-popover .dp-dot { width: 9px; height: 9px; border-radius: 50%; flex-shrink: 0; }
 .day-popover .dp-name { flex: 1; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .day-popover .dp-group { font-size: 11.5px; color: var(--text-faint); white-space: nowrap; }
-.dp-predicted-badge {
-  font-size: 10px; font-weight: 700; color: var(--text-faint); border: 1px solid var(--border);
-  border-radius: 4px; padding: 0 4px; margin-left: 4px;
+.day-popover .dp-row.predicted {
+  opacity: 0.7; box-shadow: inset 0 0 0 1px var(--border);
+  background-image: repeating-linear-gradient(135deg, var(--bg) 0 4px, transparent 4px 8px);
 }
 
 /* Layer 3 output panel */
@@ -582,8 +582,8 @@ function showDayPopover(entries, anchorEl, dateStr) {
   entries.forEach(e => {
     const c = groupColor(e.group);
     const row = document.createElement('div');
-    row.className = 'dp-row';
-    row.innerHTML = `<span class="dp-dot" style="background:${c.bg}"></span><span class="dp-name">${escHtml(e.name)}${e.__predicted ? ' <span class="dp-predicted-badge">預告</span>' : ''}</span><span class="dp-group">${escHtml(displayGroupName(e.group))}</span>`;
+    row.className = 'dp-row' + (e.__predicted ? ' predicted' : '');
+    row.innerHTML = `<span class="dp-dot" style="background:${c.bg}"></span><span class="dp-name">${escHtml(e.name)}</span><span class="dp-group">${escHtml(displayGroupName(e.group))}</span>`;
     row.addEventListener('click', () => { openPanelFor(e.group, dateStr); closeDayPopover(); });
     pop.appendChild(row);
   });
