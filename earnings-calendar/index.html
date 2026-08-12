@@ -525,7 +525,7 @@ function renderCalendar() {
         const tag = document.createElement('div');
         tag.className = 'day-tag' + (e.__predicted ? ' predicted' : '');
         tag.style.background = c.bg; tag.style.color = c.fg;
-        tag.textContent = e.__predicted ? e.name + ' ・預告' : e.name;
+        tag.textContent = e.name;
         tag.title = e.__predicted
           ? `${e.name}（${displayGroupName(e.group)}）｜下一場預告，尚未確定已召開`
           : `${e.name}（${displayGroupName(e.group)}）`;
