@@ -1695,7 +1695,7 @@
     "name": "旺矽",
     "code": "6223",
     "market": "台",
-    "group": "光通訊/CPO",
+    "group": "測試設備/IC測試",
     "earnings_date": "2026-06-08",
     "status": "已結束",
     "next_scheduled_date": "2026-08-14",
@@ -2362,5 +2362,65 @@
     "source": "TDnet鏡像(webapi.yanoshin.jp)決算短信",
     "note": null,
     "last_checked": "2026-08-13 16:15:54"
+  },
+  {
+    "name": "迪恩士 Disco",
+    "code": "6146",
+    "market": "日",
+    "group": "半導體設備",
+    "earnings_date": "2026-07-23",
+    "status": "已結束",
+    "next_scheduled_date": null,
+    "source": "TDnet鏡像(webapi.yanoshin.jp)決算短信",
+    "note": null,
+    "last_checked": "2026-08-13 18:44:25"
+  },
+  {
+    "name": "Kokusai 國際電氣",
+    "code": "6525",
+    "market": "日",
+    "group": "半導體設備",
+    "earnings_date": "2026-08-06",
+    "status": "已結束",
+    "next_scheduled_date": null,
+    "source": "TDnet鏡像(webapi.yanoshin.jp)決算短信",
+    "note": null,
+    "last_checked": "2026-08-13 18:44:25"
+  },
+  {
+    "name": "雷泰光電 Lasertec",
+    "code": "6920",
+    "market": "日",
+    "group": "半導體設備",
+    "earnings_date": "2026-08-06",
+    "status": "已結束",
+    "next_scheduled_date": null,
+    "source": "TDnet鏡像(webapi.yanoshin.jp)決算短信",
+    "note": null,
+    "last_checked": "2026-08-13 18:44:25"
+  },
+  {
+    "name": "SAMWHA CAPACITOR 三和電容",
+    "code": "001820",
+    "market": "韓",
+    "group": "被動元件",
+    "earnings_date": "2026-05-15",
+    "status": "已結束",
+    "next_scheduled_date": null,
+    "source": "Open DART公示搜尋(人工擴充關鍵字查證)",
+    "note": "DART分期報告(2026.03/Q1)申報日，非正式法說會，人工查證補上",
+    "last_checked": "2026-08-13 18:44:25"
+  },
+  {
+    "name": "Pentastone",
+    "code": "332570",
+    "market": "韓",
+    "group": "晶片組件",
+    "earnings_date": "2026-05-14",
+    "status": "已結束",
+    "next_scheduled_date": null,
+    "source": "Open DART公示搜尋(人工擴充關鍵字查證)",
+    "note": "DART分期報告(2026.03/Q1)申報日，非正式法說會，人工查證補上",
+    "last_checked": "2026-08-13 18:44:25"
   }
 ]
