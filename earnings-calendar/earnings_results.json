@@ -1669,15 +1669,15 @@
   },
   {
     "name": "訊芯-KY",
-    "code": "6535",
+    "code": "6451",
     "market": "台",
     "group": "光通訊/CPO",
-    "earnings_date": "2026-05-15",
+    "earnings_date": "2025-11-21",
     "status": "已結束",
     "next_scheduled_date": null,
     "source": "MOPS法人說明會查詢",
     "note": null,
-    "last_checked": "2026-08-13 16:15:54"
+    "last_checked": "2026-08-14 01:01:22"
   },
   {
     "name": "大立光",
