@@ -1,5 +1,5 @@
 {
-  "date": "2026-09-01",
+  "date": "2026-09-02",
   "indicators": {
     "tpex_weekly_macd": {
       "status": "ok",
@@ -11,31 +11,31 @@
     },
     "tpex_daily_macd": {
       "status": "ok",
-      "state": "紅柱增長",
-      "days_in_state": 20,
-      "histogram_today": 2.673143996181208,
-      "histogram_prev": 2.1990087222460954,
-      "confirmed_days_available": 245
+      "state": "紅柱縮短",
+      "days_in_state": 21,
+      "histogram_today": 2.5827188358283117,
+      "histogram_prev": 2.673143996181208,
+      "confirmed_days_available": 246
     },
     "taiex_monthly_ma": {
       "status": "ok",
       "state": "持續上升",
-      "days_in_state": 13
+      "days_in_state": 14
     },
     "tpex_monthly_ma": {
       "status": "ok",
       "state": "持續上升",
-      "days_in_state": 8
+      "days_in_state": 9
     }
   },
   "top20": [
     {
-      "code": "3037",
-      "name": "欣興",
+      "code": "2454",
+      "name": "聯發科",
       "rank": 1,
-      "group_custom": "ABF載板",
-      "group_official": "電子零組件業",
-      "is_new_entry_top20": true
+      "group_custom": "IC/IP設計",
+      "group_official": "半導體業",
+      "is_new_entry_top20": false
     },
     {
       "code": "2330",
@@ -46,57 +46,49 @@
       "is_new_entry_top20": false
     },
     {
-      "code": "2408",
-      "name": "南亞科",
-      "rank": 3,
-      "group_custom": "記憶體",
-      "group_official": "半導體業",
-      "is_new_entry_top20": false
-    },
-    {
-      "code": "4958",
-      "name": "臻鼎-KY",
-      "rank": 4,
-      "group_custom": "ABF載板",
-      "group_official": "電子零組件業",
-      "is_new_entry_top20": false
-    },
-    {
-      "code": "3189",
-      "name": "景碩",
-      "rank": 5,
-      "group_custom": "ABF載板",
-      "group_official": "半導體業",
-      "is_new_entry_top20": false
-    },
-    {
       "code": "1303",
       "name": "南亞",
-      "rank": 6,
+      "rank": 3,
       "group_custom": "CCL",
       "group_official": "塑膠工業",
       "is_new_entry_top20": false
     },
     {
-      "code": "2303",
-      "name": "聯電",
-      "rank": 7,
-      "group_custom": "晶圓代工",
+      "code": "6669",
+      "name": "緯穎",
+      "rank": 4,
+      "group_custom": "伺服器ODM",
+      "group_official": "電腦及週邊設備業",
+      "is_new_entry_top20": false
+    },
+    {
+      "code": "2308",
+      "name": "台達電",
+      "rank": 5,
+      "group_custom": "電源管理",
+      "group_official": "電子零組件業",
+      "is_new_entry_top20": true
+    },
+    {
+      "code": "2408",
+      "name": "南亞科",
+      "rank": 6,
+      "group_custom": "記憶體",
       "group_official": "半導體業",
       "is_new_entry_top20": false
     },
     {
-      "code": "3008",
-      "name": "大立光",
-      "rank": 8,
-      "group_custom": "CPO光模組",
-      "group_official": "光電業",
+      "code": "3037",
+      "name": "欣興",
+      "rank": 7,
+      "group_custom": "ABF載板",
+      "group_official": "電子零組件業",
       "is_new_entry_top20": false
     },
     {
       "code": "3105",
       "name": "穩懋",
-      "rank": 9,
+      "rank": 8,
       "group_custom": "光通訊原料",
       "group_official": "半導體業",
       "is_new_entry_top20": false
@@ -104,90 +96,98 @@
     {
       "code": "2327",
       "name": "國巨*",
-      "rank": 10,
+      "rank": 9,
       "group_custom": "被動元件",
       "group_official": "電子零組件業",
       "is_new_entry_top20": false
     },
     {
-      "code": "2344",
-      "name": "華邦電",
+      "code": "2455",
+      "name": "全新",
+      "rank": 10,
+      "group_custom": "光通訊原料",
+      "group_official": "通信網路業",
+      "is_new_entry_top20": false
+    },
+    {
+      "code": "3008",
+      "name": "大立光",
       "rank": 11,
-      "group_custom": "記憶體",
+      "group_custom": "CPO光模組",
+      "group_official": "光電業",
+      "is_new_entry_top20": false
+    },
+    {
+      "code": "2303",
+      "name": "聯電",
+      "rank": 12,
+      "group_custom": "晶圓代工",
       "group_official": "半導體業",
       "is_new_entry_top20": false
     },
     {
-      "code": "8046",
-      "name": "南電",
-      "rank": 12,
-      "group_custom": "ABF載板",
+      "code": "1815",
+      "name": "富喬",
+      "rank": 13,
+      "group_custom": "玻纖布",
       "group_official": "電子零組件業",
-      "is_new_entry_top20": false
+      "is_new_entry_top20": true
     },
     {
-      "code": "6669",
-      "name": "緯穎",
-      "rank": 13,
+      "code": "3231",
+      "name": "緯創",
+      "rank": 14,
       "group_custom": "伺服器ODM",
       "group_official": "電腦及週邊設備業",
       "is_new_entry_top20": true
     },
     {
-      "code": "2454",
-      "name": "聯發科",
-      "rank": 14,
+      "code": "4958",
+      "name": "臻鼎-KY",
+      "rank": 15,
+      "group_custom": "ABF載板",
+      "group_official": "電子零組件業",
+      "is_new_entry_top20": false
+    },
+    {
+      "code": "3324",
+      "name": "雙鴻",
+      "rank": 16,
+      "group_custom": "散熱原件",
+      "group_official": "其他電子業",
+      "is_new_entry_top20": true
+    },
+    {
+      "code": "2344",
+      "name": "華邦電",
+      "rank": 17,
+      "group_custom": "記憶體",
+      "group_official": "半導體業",
+      "is_new_entry_top20": false
+    },
+    {
+      "code": "2301",
+      "name": "光寶科",
+      "rank": 18,
+      "group_custom": "電源管理",
+      "group_official": "電腦及週邊設備業",
+      "is_new_entry_top20": true
+    },
+    {
+      "code": "3189",
+      "name": "景碩",
+      "rank": 19,
+      "group_custom": "ABF載板",
+      "group_official": "半導體業",
+      "is_new_entry_top20": false
+    },
+    {
+      "code": "5274",
+      "name": "信驊",
+      "rank": 20,
       "group_custom": "IC/IP設計",
       "group_official": "半導體業",
-      "is_new_entry_top20": false
-    },
-    {
-      "code": "8358",
-      "name": "金居",
-      "rank": 15,
-      "group_custom": "PCB",
-      "group_official": "電子零組件業",
-      "is_new_entry_top20": false
-    },
-    {
-      "code": "2368",
-      "name": "金像電",
-      "rank": 16,
-      "group_custom": "PCB",
-      "group_official": "電子零組件業",
-      "is_new_entry_top20": false
-    },
-    {
-      "code": "3711",
-      "name": "日月光投控",
-      "rank": 17,
-      "group_custom": "封裝測試",
-      "group_official": "半導體業",
-      "is_new_entry_top20": false
-    },
-    {
-      "code": "2449",
-      "name": "京元電子",
-      "rank": 18,
-      "group_custom": "封裝測試",
-      "group_official": "半導體業",
       "is_new_entry_top20": true
-    },
-    {
-      "code": "2455",
-      "name": "全新",
-      "rank": 19,
-      "group_custom": "光通訊原料",
-      "group_official": "通信網路業",
-      "is_new_entry_top20": true
-    },
-    {
-      "code": "2313",
-      "name": "華通",
-      "rank": 20,
-      "group_custom": "低軌衛星",
-      "group_official": "電子零組件業",
-      "is_new_entry_top20": false
     }
   ]
 }
