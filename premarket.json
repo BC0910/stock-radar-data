@@ -1,31 +1,31 @@
 {
-  "date": "2026-09-11",
+  "date": "2026-09-15",
   "indicators": {
     "tpex_weekly_macd": {
       "status": "ok",
-      "state": "綠柱縮短",
+      "state": "綠柱增長",
       "confirmed_trend": "持續上升",
-      "weeks_in_confirmed_trend": 5,
-      "unconfirmed_signal": false,
-      "confirmed_weeks_available": 59
+      "weeks_in_confirmed_trend": 6,
+      "unconfirmed_signal": true,
+      "confirmed_weeks_available": 60
     },
     "tpex_daily_macd": {
       "status": "ok",
-      "state": "紅柱縮短",
-      "days_in_state": 28,
-      "histogram_today": 0.08835670377471772,
-      "histogram_prev": 1.0133705578429746,
-      "confirmed_days_available": 253
+      "state": "綠柱增長",
+      "days_in_state": 2,
+      "histogram_today": -1.3761862688983486,
+      "histogram_prev": -0.5800869669610083,
+      "confirmed_days_available": 255
     },
     "taiex_monthly_ma": {
       "status": "ok",
-      "state": "持續上升",
-      "days_in_state": 21
+      "state": "由升轉降",
+      "days_in_state": 1
     },
     "tpex_monthly_ma": {
       "status": "ok",
       "state": "持續下降",
-      "days_in_state": 2
+      "days_in_state": 4
     }
   },
   "top20": [
@@ -54,20 +54,20 @@
       "is_new_entry_top20": false
     },
     {
-      "code": "3661",
-      "name": "世芯-KY",
+      "code": "3008",
+      "name": "大立光",
       "rank": 4,
-      "group_custom": "IC/IP設計",
-      "group_official": "半導體業",
-      "is_new_entry_top20": true
+      "group_custom": "CPO光模組",
+      "group_official": "光電業",
+      "is_new_entry_top20": false
     },
     {
-      "code": "2327",
-      "name": "國巨*",
+      "code": "3105",
+      "name": "穩懋",
       "rank": 5,
-      "group_custom": "被動元件",
-      "group_official": "電子零組件業",
-      "is_new_entry_top20": false
+      "group_custom": "光通訊原料",
+      "group_official": "半導體業",
+      "is_new_entry_top20": true
     },
     {
       "code": "2408",
@@ -78,84 +78,84 @@
       "is_new_entry_top20": false
     },
     {
-      "code": "2492",
-      "name": "華新科",
-      "rank": 7,
-      "group_custom": "被動元件",
-      "group_official": "電子零組件業",
-      "is_new_entry_top20": false
-    },
-    {
-      "code": "6173",
-      "name": "信昌電",
-      "rank": 8,
-      "group_custom": "被動元件",
-      "group_official": "電子零組件業",
-      "is_new_entry_top20": true
-    },
-    {
       "code": "2303",
       "name": "聯電",
-      "rank": 9,
+      "rank": 7,
       "group_custom": "晶圓代工",
       "group_official": "半導體業",
       "is_new_entry_top20": false
     },
     {
-      "code": "2409",
-      "name": "友達",
-      "rank": 10,
-      "group_custom": "面板",
-      "group_official": "光電業",
+      "code": "3443",
+      "name": "創意",
+      "rank": 8,
+      "group_custom": "IC/IP設計",
+      "group_official": "半導體業",
       "is_new_entry_top20": false
     },
     {
-      "code": "3711",
-      "name": "日月光投控",
+      "code": "3653",
+      "name": "健策",
+      "rank": 9,
+      "group_custom": "散熱原件",
+      "group_official": "電子零組件業",
+      "is_new_entry_top20": true
+    },
+    {
+      "code": "8358",
+      "name": "金居",
+      "rank": 10,
+      "group_custom": "PCB",
+      "group_official": "電子零組件業",
+      "is_new_entry_top20": true
+    },
+    {
+      "code": "6147",
+      "name": "頎邦",
       "rank": 11,
       "group_custom": "封裝測試",
       "group_official": "半導體業",
-      "is_new_entry_top20": false
+      "is_new_entry_top20": true
     },
     {
-      "code": "3008",
-      "name": "大立光",
+      "code": "1303",
+      "name": "南亞",
       "rank": 12,
-      "group_custom": "CPO光模組",
-      "group_official": "光電業",
+      "group_custom": "CCL",
+      "group_official": "塑膠工業",
       "is_new_entry_top20": false
     },
     {
-      "code": "2344",
-      "name": "華邦電",
+      "code": "2327",
+      "name": "國巨*",
       "rank": 13,
-      "group_custom": "記憶體",
-      "group_official": "半導體業",
-      "is_new_entry_top20": false
-    },
-    {
-      "code": "3026",
-      "name": "禾伸堂",
-      "rank": 14,
       "group_custom": "被動元件",
       "group_official": "電子零組件業",
       "is_new_entry_top20": false
     },
     {
-      "code": "3406",
-      "name": "玉晶光",
-      "rank": 15,
-      "group_custom": null,
-      "group_official": "光電業",
+      "code": "2344",
+      "name": "華邦電",
+      "rank": 14,
+      "group_custom": "記憶體",
+      "group_official": "半導體業",
       "is_new_entry_top20": false
     },
     {
-      "code": "1303",
-      "name": "南亞",
-      "rank": 16,
-      "group_custom": "CCL",
-      "group_official": "塑膠工業",
+      "code": "6770",
+      "name": "力積電",
+      "rank": 15,
+      "group_custom": "晶圓代工",
+      "group_official": "半導體業",
       "is_new_entry_top20": false
+    },
+    {
+      "code": "3017",
+      "name": "奇鋐",
+      "rank": 16,
+      "group_custom": "散熱原件",
+      "group_official": "電腦及週邊設備業",
+      "is_new_entry_top20": true
     },
     {
       "code": "3037",
@@ -166,24 +166,24 @@
       "is_new_entry_top20": false
     },
     {
-      "code": "6770",
-      "name": "力積電",
+      "code": "4958",
+      "name": "臻鼎-KY",
       "rank": 18,
-      "group_custom": "晶圓代工",
-      "group_official": "半導體業",
+      "group_custom": "ABF載板",
+      "group_official": "電子零組件業",
       "is_new_entry_top20": false
     },
     {
-      "code": "4958",
-      "name": "臻鼎-KY",
+      "code": "2481",
+      "name": "強茂",
       "rank": 19,
-      "group_custom": "ABF載板",
-      "group_official": "電子零組件業",
+      "group_custom": "主動元件",
+      "group_official": "半導體業",
       "is_new_entry_top20": true
     },
     {
-      "code": "3443",
-      "name": "創意",
+      "code": "3661",
+      "name": "世芯-KY",
       "rank": 20,
       "group_custom": "IC/IP設計",
       "group_official": "半導體業",
